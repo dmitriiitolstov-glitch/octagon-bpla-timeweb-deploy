@@ -8,6 +8,10 @@
   const menuScrim = document.querySelector('[data-menu-scrim]');
   const menuClose = document.querySelector('[data-menu-close]');
   const drawerLinks = [...document.querySelectorAll('[data-mobile-menu] a')];
+  const drawerBody = document.querySelector('[data-drawer-body]');
+  const drawerViews = [...document.querySelectorAll('[data-drawer-view]')];
+  const drawerPhonesOpen = document.querySelector('[data-drawer-phones-open]');
+  const drawerPhonesBack = document.querySelector('[data-drawer-phones-back]');
   const contactTrigger = document.querySelector('[data-contact-trigger]');
   const contactMenu = document.querySelector('[data-contact-menu]');
   const heroSlider = document.querySelector('[data-hero-slider]');
@@ -23,6 +27,27 @@
   const hoverNavigation = window.matchMedia('(hover: hover) and (pointer: fine)');
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   let megaCloseTimer;
+  const menuBackgroundElements = new Set();
+
+  const setMenuBackgroundInert = (inert) => {
+    if (inert) {
+      [...body.children].forEach((element) => {
+        if (element === mobileMenu || element === menuScrim || element.hasAttribute('inert')) return;
+        element.setAttribute('inert', '');
+        menuBackgroundElements.add(element);
+      });
+      return;
+    }
+
+    menuBackgroundElements.forEach((element) => element.removeAttribute('inert'));
+    menuBackgroundElements.clear();
+  };
+
+  const getMenuFocusable = () => {
+    if (!mobileMenu) return [];
+    return [...mobileMenu.querySelectorAll('a[href],button:not([disabled]),summary,[tabindex]:not([tabindex="-1"])')]
+      .filter((element) => !element.closest('[inert]') && element.getClientRects().length > 0);
+  };
 
   const setAccessibilityMode = (enabled) => {
     document.documentElement.dataset.accessibilityMode = String(enabled);
@@ -64,14 +89,38 @@
     megaPanels.forEach((panel) => panel.setAttribute('aria-hidden', 'true'));
   };
 
+  const setDrawerView = (name, { moveFocus = true } = {}) => {
+    if (!drawerBody) return;
+    if (mobileMenu) mobileMenu.scrollTop = 0;
+    drawerBody.dataset.view = name;
+    drawerPhonesOpen?.setAttribute('aria-expanded', String(name === 'phones'));
+
+    drawerViews.forEach((view) => {
+      const active = view.dataset.drawerView === name;
+      view.setAttribute('aria-hidden', String(!active));
+      if (active) view.removeAttribute('inert');
+      else view.setAttribute('inert', '');
+    });
+
+    if (!moveFocus) return;
+    const focusTarget = name === 'phones' ? drawerPhonesBack : drawerPhonesOpen;
+    requestAnimationFrame(() => focusTarget?.focus());
+  };
+
   const setMenuOpen = (open) => {
     mobileTrigger?.setAttribute('aria-expanded', String(open));
     mobileMenu?.setAttribute('aria-hidden', String(!open));
     menuScrim?.setAttribute('aria-hidden', String(!open));
     body.classList.toggle('menu-open', open);
+    setMenuBackgroundInert(open);
     if (open) {
+      setDrawerView('main', { moveFocus: false });
+      const mainView = drawerViews.find((view) => view.dataset.drawerView === 'main');
+      if (mainView) mainView.scrollTop = 0;
       closeMegas();
       requestAnimationFrame(() => menuClose?.focus());
+    } else {
+      setDrawerView('main', { moveFocus: false });
     }
   };
 
@@ -139,8 +188,13 @@
     setMenuOpen(false);
     mobileTrigger?.focus();
   });
-  menuScrim?.addEventListener('click', () => setMenuOpen(false));
+  menuScrim?.addEventListener('click', () => {
+    setMenuOpen(false);
+    mobileTrigger?.focus();
+  });
   drawerLinks.forEach((link) => link.addEventListener('click', () => setMenuOpen(false)));
+  drawerPhonesOpen?.addEventListener('click', () => setDrawerView('phones'));
+  drawerPhonesBack?.addEventListener('click', () => setDrawerView('main'));
 
   contactTrigger?.addEventListener('click', () => {
     const willOpen = contactTrigger.getAttribute('aria-expanded') !== 'true';
@@ -160,10 +214,34 @@
   });
 
   document.addEventListener('keydown', (event) => {
+    const menuWasOpen = mobileTrigger?.getAttribute('aria-expanded') === 'true';
+    if (event.key === 'Tab' && menuWasOpen) {
+      const focusable = getMenuFocusable();
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (!first || !last) return;
+
+      if (!mobileMenu?.contains(document.activeElement)) {
+        event.preventDefault();
+        first.focus();
+      } else if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+      return;
+    }
+
     if (event.key !== 'Escape') return;
     utilityDisclosures.forEach((disclosure) => { disclosure.open = false; });
     closeMegas();
-    const menuWasOpen = mobileTrigger?.getAttribute('aria-expanded') === 'true';
+    if (menuWasOpen && drawerBody?.dataset.view === 'phones') {
+      setDrawerView('main');
+      setContactOpen(false);
+      return;
+    }
     setMenuOpen(false);
     setContactOpen(false);
     if (menuWasOpen) mobileTrigger?.focus();
