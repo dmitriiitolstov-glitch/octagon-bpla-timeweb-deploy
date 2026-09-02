@@ -22,7 +22,7 @@
   const heroCurrent = document.querySelector('[data-hero-current]');
   const scrollDock = document.querySelector('[data-scroll-dock]');
   const utilityDisclosures = [...document.querySelectorAll('[data-utility-disclosure]')];
-  const accessibilityToggle = document.querySelector('[data-accessibility-toggle]');
+  const accessibilityToggles = [...document.querySelectorAll('[data-accessibility-toggle]')];
   const accessibilityStorageKey = 'octagon-accessibility-mode';
   const hoverNavigation = window.matchMedia('(hover: hover) and (pointer: fine)');
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -51,11 +51,13 @@
 
   const setAccessibilityMode = (enabled) => {
     document.documentElement.dataset.accessibilityMode = String(enabled);
-    accessibilityToggle?.setAttribute('aria-pressed', String(enabled));
-    accessibilityToggle?.setAttribute('aria-label', enabled
-      ? 'Выключить версию для слабовидящих'
-      : 'Включить версию для слабовидящих');
-    accessibilityToggle?.setAttribute('title', enabled ? 'Обычная версия' : 'Версия для слабовидящих');
+    accessibilityToggles.forEach((toggle) => {
+      toggle.setAttribute('aria-pressed', String(enabled));
+      toggle.setAttribute('aria-label', enabled
+        ? 'Выключить версию для слабовидящих'
+        : 'Включить версию для слабовидящих');
+      toggle.setAttribute('title', enabled ? 'Обычная версия' : 'Версия для слабовидящих');
+    });
   };
 
   try {
@@ -73,14 +75,16 @@
     });
   });
 
-  accessibilityToggle?.addEventListener('click', () => {
-    const enabled = document.documentElement.dataset.accessibilityMode !== 'true';
-    setAccessibilityMode(enabled);
-    try {
-      window.localStorage.setItem(accessibilityStorageKey, String(enabled));
-    } catch {
-      // The mode still works for the current page when storage is unavailable.
-    }
+  accessibilityToggles.forEach((toggle) => {
+    toggle.addEventListener('click', () => {
+      const enabled = document.documentElement.dataset.accessibilityMode !== 'true';
+      setAccessibilityMode(enabled);
+      try {
+        window.localStorage.setItem(accessibilityStorageKey, String(enabled));
+      } catch {
+        // The mode still works for the current page when storage is unavailable.
+      }
+    });
   });
 
   const closeMegas = () => {
@@ -91,7 +95,6 @@
 
   const setDrawerView = (name, { moveFocus = true } = {}) => {
     if (!drawerBody) return;
-    if (mobileMenu) mobileMenu.scrollTop = 0;
     drawerBody.dataset.view = name;
     drawerPhonesOpen?.setAttribute('aria-expanded', String(name === 'phones'));
 
@@ -102,14 +105,18 @@
       else view.setAttribute('inert', '');
     });
 
+    const nextView = drawerViews.find((view) => view.dataset.drawerView === name);
+    if (name === 'phones' && nextView) nextView.scrollTop = 0;
+
     if (!moveFocus) return;
     const focusTarget = name === 'phones' ? drawerPhonesBack : drawerPhonesOpen;
     requestAnimationFrame(() => focusTarget?.focus());
   };
 
-  const setMenuOpen = (open) => {
+  const setMenuOpen = (open, { moveFocus = true } = {}) => {
     mobileTrigger?.setAttribute('aria-expanded', String(open));
     mobileMenu?.setAttribute('aria-hidden', String(!open));
+    mobileMenu?.toggleAttribute('inert', !open);
     menuScrim?.setAttribute('aria-hidden', String(!open));
     body.classList.toggle('menu-open', open);
     setMenuBackgroundInert(open);
@@ -118,7 +125,9 @@
       const mainView = drawerViews.find((view) => view.dataset.drawerView === 'main');
       if (mainView) mainView.scrollTop = 0;
       closeMegas();
-      requestAnimationFrame(() => menuClose?.focus());
+      utilityDisclosures.forEach((disclosure) => { disclosure.open = false; });
+      setContactOpen(false);
+      if (moveFocus) requestAnimationFrame(() => menuClose?.focus());
     } else {
       setDrawerView('main', { moveFocus: false });
     }
@@ -182,6 +191,10 @@
   mobileTrigger?.addEventListener('click', () => {
     const willOpen = mobileTrigger.getAttribute('aria-expanded') !== 'true';
     setMenuOpen(willOpen);
+  });
+  mobileTrigger?.addEventListener('pointerenter', () => {
+    if (!hoverNavigation.matches || mobileTrigger.getAttribute('aria-expanded') === 'true') return;
+    setMenuOpen(true, { moveFocus: false });
   });
 
   menuClose?.addEventListener('click', () => {
