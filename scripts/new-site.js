@@ -436,7 +436,8 @@
   }
 
   const trainingSnap = document.querySelector('[data-training-snap]');
-  if (trainingSnap && !reduceMotion) {
+  const compactTrainingViewport = window.matchMedia('(max-height: 620px)');
+  if (trainingSnap && !reduceMotion && !compactTrainingViewport.matches) {
     const snapWindow = trainingSnap.querySelector('[data-training-window]');
     const snapItems = [...trainingSnap.querySelectorAll('[data-training-item]')];
     const snapCounter = trainingSnap.querySelector('[data-training-counter]');
@@ -472,11 +473,14 @@
       snapItems.forEach((item, index) => {
         const delta = index - nextIndex;
         const distance = Math.abs(delta);
+        const isActive = distance === 0;
         item.style.setProperty('--snap-y', `${positions[index]}px`);
         item.style.setProperty('--snap-x', `${Math.min(distance, 2) * 20}px`);
         item.style.setProperty('--snap-scale', String(scaleForDistance(distance)));
         item.style.setProperty('--snap-opacity', String(opacityForDistance(distance)));
-        item.classList.toggle('is-active', distance === 0);
+        item.classList.toggle('is-active', isActive);
+        item.setAttribute('aria-hidden', String(!isActive));
+        item.tabIndex = isActive ? 0 : -1;
       });
     };
 
