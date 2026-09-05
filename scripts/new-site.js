@@ -437,13 +437,60 @@
 
   const trainingSnap = document.querySelector('[data-training-snap]');
   const compactTrainingViewport = window.matchMedia('(max-height: 620px)');
-  if (trainingSnap && !reduceMotion && !compactTrainingViewport.matches) {
+  if (trainingSnap && !reduceMotion) {
     const snapWindow = trainingSnap.querySelector('[data-training-window]');
     const snapItems = [...trainingSnap.querySelectorAll('[data-training-item]')];
     const snapCounter = trainingSnap.querySelector('[data-training-counter]');
     const snapProgress = trainingSnap.querySelector('[data-training-progress]');
     let activeIndex = -1;
     let snapScheduled = false;
+
+    const showStaticOffers = () => {
+      trainingSnap.classList.remove('is-enhanced');
+      activeIndex = -1;
+      snapItems.forEach((item) => {
+        item.style.removeProperty('--snap-title-size');
+        item.classList.remove('is-active');
+        item.removeAttribute('aria-hidden');
+        item.removeAttribute('tabindex');
+      });
+      if (snapCounter) snapCounter.textContent = '01';
+    };
+
+    const fitSnapItems = () => {
+      if (!snapWindow || !snapItems.length || compactTrainingViewport.matches) {
+        showStaticOffers();
+        return;
+      }
+
+      trainingSnap.classList.add('is-enhanced');
+      // Keep the entire active offer inside the opaque part of the edge mask.
+      const heightBudget = Math.floor(snapWindow.clientHeight * .72);
+      let allFit = true;
+      snapItems.forEach((item) => {
+        item.style.removeProperty('--snap-title-size');
+        const title = item.querySelector('strong');
+        if (!title) return;
+        const baseSize = parseFloat(getComputedStyle(title).fontSize);
+        if (item.offsetHeight <= heightBudget) return;
+
+        let low = Math.min(26, baseSize);
+        let high = baseSize;
+        item.style.setProperty('--snap-title-size', `${low}px`);
+        if (item.offsetHeight > heightBudget) {
+          allFit = false;
+          return;
+        }
+        for (let step = 0; step < 7; step += 1) {
+          const candidate = (low + high) / 2;
+          item.style.setProperty('--snap-title-size', `${candidate}px`);
+          if (item.offsetHeight <= heightBudget) low = candidate;
+          else high = candidate;
+        }
+        item.style.setProperty('--snap-title-size', `${Math.floor(low * 10) / 10}px`);
+      });
+      if (!allFit) showStaticOffers();
+    };
 
     const positionSnapItems = (nextIndex) => {
       if (!snapWindow || !snapItems.length) return;
@@ -485,6 +532,10 @@
     };
 
     const renderTrainingSnap = () => {
+      if (!trainingSnap.classList.contains('is-enhanced')) {
+        snapScheduled = false;
+        return;
+      }
       const start = trainingSnap.offsetTop;
       const distance = Math.max(1, trainingSnap.offsetHeight - window.innerHeight);
       const progress = Math.max(0, Math.min(1, (window.scrollY - start) / distance));
@@ -505,14 +556,18 @@
       requestAnimationFrame(renderTrainingSnap);
     };
 
-    trainingSnap.classList.add('is-enhanced');
-    renderTrainingSnap();
+    const layoutTrainingSnap = () => {
+      fitSnapItems();
+      activeIndex = -1;
+      renderTrainingSnap();
+    };
+
+    layoutTrainingSnap();
     window.addEventListener('scroll', scheduleTrainingSnap, { passive: true });
     window.addEventListener('resize', () => {
-      positionSnapItems(Math.max(0, activeIndex));
-      scheduleTrainingSnap();
+      requestAnimationFrame(layoutTrainingSnap);
     });
-    document.fonts?.ready.then(() => positionSnapItems(Math.max(0, activeIndex)));
+    document.fonts?.ready.then(layoutTrainingSnap);
   }
 
   document.querySelectorAll('[data-demo-form]').forEach((form) => {
