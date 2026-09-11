@@ -1,0 +1,1035 @@
+{
+  "source": "../materials/revision-2026-09-10-2131/manifest.json",
+  "produce": [],
+  "direct": [
+    {
+      "id": "icon-1",
+      "source_crop": "../materials/revision-2026-09-10-2131/03-982c1250070f9d8e6318d415b295a216_c70aa088_d0d2_481b_8433_2f4ecf5ae772.jpg",
+      "source_file": "982c1250070f9d8e6318d415b295a216_c70aa088_d0d2_481b_8433_2f4ecf5ae772.jpg",
+      "source_number": 3,
+      "source_sha256": "5b3622d281f9339b0c7684596bc0d0b1c6f1769fc9fde47d71d1bfa1fec73cac",
+      "source_dimensions": {
+        "width": 2048,
+        "height": 2048,
+        "orientation": 1
+      },
+      "output_path": "public/images/soldering-course/icon-1.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 982c1250070f9d8e6318d415b295a216_c70aa088_d0d2_481b_8433_2f4ecf5ae772.jpg, image 3; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: 5b3622d281f9339b0c7684596bc0d0b1c6f1769fc9fde47d71d1bfa1fec73cac. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/03-982c1250070f9d8e6318d415b295a216_c70aa088_d0d2_481b_8433_2f4ecf5ae772.jpg.",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "bytes": 19126,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [
+        "Checkerboard background is baked into the supplied JPEG and intentionally preserved."
+      ],
+      "qa_status": "needs_parent_review"
+    },
+    {
+      "id": "icon-2",
+      "source_crop": "../materials/revision-2026-09-10-2131/04-b93e90a58da1263748eeed85f12d0646_f7b9fbc2_bf3e_4ce0_a8d6_50e355c304ce.jpg",
+      "source_file": "b93e90a58da1263748eeed85f12d0646_f7b9fbc2_bf3e_4ce0_a8d6_50e355c304ce.jpg",
+      "source_number": 4,
+      "source_sha256": "6ab33f358af09db5aa89dc97d56da75424f09c02a2a9b96a78295075d3ecd542",
+      "source_dimensions": {
+        "width": 2048,
+        "height": 2048,
+        "orientation": 1
+      },
+      "output_path": "public/images/soldering-course/icon-2.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file b93e90a58da1263748eeed85f12d0646_f7b9fbc2_bf3e_4ce0_a8d6_50e355c304ce.jpg, image 4; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: 6ab33f358af09db5aa89dc97d56da75424f09c02a2a9b96a78295075d3ecd542. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/04-b93e90a58da1263748eeed85f12d0646_f7b9fbc2_bf3e_4ce0_a8d6_50e355c304ce.jpg.",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "bytes": 22838,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [
+        "Checkerboard background is baked into the supplied JPEG and intentionally preserved."
+      ],
+      "qa_status": "needs_parent_review"
+    },
+    {
+      "id": "icon-3",
+      "source_crop": "../materials/revision-2026-09-10-2131/05-46ed95ce1f23ee39a3e9ddf02c541215_df35428a_a86f_4a5e_b835_c656c1bfe07e.jpg",
+      "source_file": "46ed95ce1f23ee39a3e9ddf02c541215_df35428a_a86f_4a5e_b835_c656c1bfe07e.jpg",
+      "source_number": 5,
+      "source_sha256": "f5845675f1f6f7aea986e3e327d86139a973e89098ba232d3ac9cbc6cd4a558c",
+      "source_dimensions": {
+        "width": 2048,
+        "height": 2048,
+        "orientation": 1
+      },
+      "output_path": "public/images/soldering-course/icon-3.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 46ed95ce1f23ee39a3e9ddf02c541215_df35428a_a86f_4a5e_b835_c656c1bfe07e.jpg, image 5; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: f5845675f1f6f7aea986e3e327d86139a973e89098ba232d3ac9cbc6cd4a558c. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/05-46ed95ce1f23ee39a3e9ddf02c541215_df35428a_a86f_4a5e_b835_c656c1bfe07e.jpg.",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "bytes": 20952,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [
+        "Checkerboard background is baked into the supplied JPEG and intentionally preserved."
+      ],
+      "qa_status": "needs_parent_review"
+    },
+    {
+      "id": "icon-4",
+      "source_crop": "../materials/revision-2026-09-10-2131/06-585533a71447e623bbcb42a00f60fcb9_365bb6ae_ce22_41ce_b3bd_6a7f3f3745ff.jpg",
+      "source_file": "585533a71447e623bbcb42a00f60fcb9_365bb6ae_ce22_41ce_b3bd_6a7f3f3745ff.jpg",
+      "source_number": 6,
+      "source_sha256": "bf7733a90161529e2a2255e075616208772b80ddf977b01d8777d8020b1bb84b",
+      "source_dimensions": {
+        "width": 2048,
+        "height": 2048,
+        "orientation": 1
+      },
+      "output_path": "public/images/soldering-course/icon-4.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 585533a71447e623bbcb42a00f60fcb9_365bb6ae_ce22_41ce_b3bd_6a7f3f3745ff.jpg, image 6; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: bf7733a90161529e2a2255e075616208772b80ddf977b01d8777d8020b1bb84b. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/06-585533a71447e623bbcb42a00f60fcb9_365bb6ae_ce22_41ce_b3bd_6a7f3f3745ff.jpg.",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "bytes": 23962,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [
+        "Checkerboard background is baked into the supplied JPEG and intentionally preserved."
+      ],
+      "qa_status": "needs_parent_review"
+    },
+    {
+      "id": "icon-5",
+      "source_crop": "../materials/revision-2026-09-10-2131/07-928135ac782b0e5551c1deb89e7ba65a_020e85b6_3d73_443b_8915_9638ad11fee7.jpg",
+      "source_file": "928135ac782b0e5551c1deb89e7ba65a_020e85b6_3d73_443b_8915_9638ad11fee7.jpg",
+      "source_number": 7,
+      "source_sha256": "4d4aac6e6073981af1ddde6c1102be08d52524dca50b47f52af65b6535f614be",
+      "source_dimensions": {
+        "width": 2048,
+        "height": 2048,
+        "orientation": 1
+      },
+      "output_path": "public/images/soldering-course/icon-5.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 928135ac782b0e5551c1deb89e7ba65a_020e85b6_3d73_443b_8915_9638ad11fee7.jpg, image 7; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: 4d4aac6e6073981af1ddde6c1102be08d52524dca50b47f52af65b6535f614be. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/07-928135ac782b0e5551c1deb89e7ba65a_020e85b6_3d73_443b_8915_9638ad11fee7.jpg.",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "bytes": 23396,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [
+        "Checkerboard background is baked into the supplied JPEG and intentionally preserved."
+      ],
+      "qa_status": "needs_parent_review"
+    },
+    {
+      "id": "icon-6",
+      "source_crop": "../materials/revision-2026-09-10-2131/08-71129425acbb7fea7684710bb9112cfe_fa7b1ed0_ac41_4b5d_9076_8ee889f44d45.jpg",
+      "source_file": "71129425acbb7fea7684710bb9112cfe_fa7b1ed0_ac41_4b5d_9076_8ee889f44d45.jpg",
+      "source_number": 8,
+      "source_sha256": "1b0ee923d220d226678f6ba130c2eadb6378c9b48e5851d100c396a31110b176",
+      "source_dimensions": {
+        "width": 2048,
+        "height": 2048,
+        "orientation": 1
+      },
+      "output_path": "public/images/soldering-course/icon-6.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 71129425acbb7fea7684710bb9112cfe_fa7b1ed0_ac41_4b5d_9076_8ee889f44d45.jpg, image 8; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: 1b0ee923d220d226678f6ba130c2eadb6378c9b48e5851d100c396a31110b176. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/08-71129425acbb7fea7684710bb9112cfe_fa7b1ed0_ac41_4b5d_9076_8ee889f44d45.jpg.",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "bytes": 17162,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [
+        "Checkerboard background is baked into the supplied JPEG and intentionally preserved."
+      ],
+      "qa_status": "needs_parent_review"
+    },
+    {
+      "id": "icon-7",
+      "source_crop": "../materials/revision-2026-09-10-2131/09-5c92812f5a14730d6bc62b1201cf39bf_813c2a6b_18db_499c_a7d7_fb9916cfee89.jpg",
+      "source_file": "5c92812f5a14730d6bc62b1201cf39bf_813c2a6b_18db_499c_a7d7_fb9916cfee89.jpg",
+      "source_number": 9,
+      "source_sha256": "9ee3c5e6e30ba2f6d61f8fc5f4b4e4c36dbdc1f563d29d0b02aed709a99df566",
+      "source_dimensions": {
+        "width": 2048,
+        "height": 2048,
+        "orientation": 1
+      },
+      "output_path": "public/images/soldering-course/icon-7.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 5c92812f5a14730d6bc62b1201cf39bf_813c2a6b_18db_499c_a7d7_fb9916cfee89.jpg, image 9; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: 9ee3c5e6e30ba2f6d61f8fc5f4b4e4c36dbdc1f563d29d0b02aed709a99df566. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/09-5c92812f5a14730d6bc62b1201cf39bf_813c2a6b_18db_499c_a7d7_fb9916cfee89.jpg.",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "bytes": 20930,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [
+        "Checkerboard background is baked into the supplied JPEG and intentionally preserved."
+      ],
+      "qa_status": "needs_parent_review"
+    },
+    {
+      "id": "photo-11",
+      "source_crop": "../materials/revision-2026-09-10-2131/11-3M4A5100.JPG",
+      "source_file": "3M4A5100.JPG",
+      "source_number": 11,
+      "source_sha256": "222931eb7c4178d85dce897823cb7e572c44f2dd60b76075bd6dcd5a9cabd3c5",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/soldering-course/photo-11.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 3M4A5100.JPG, image 11; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: 222931eb7c4178d85dce897823cb7e572c44f2dd60b76075bd6dcd5a9cabd3c5. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/11-3M4A5100.JPG.",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      },
+      "bytes": 100718,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-11-small",
+      "source_crop": "../materials/revision-2026-09-10-2131/11-3M4A5100.JPG",
+      "source_file": "3M4A5100.JPG",
+      "source_number": 11,
+      "source_sha256": "222931eb7c4178d85dce897823cb7e572c44f2dd60b76075bd6dcd5a9cabd3c5",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/soldering-course/photo-11-small.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 3M4A5100.JPG, image 11; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: 222931eb7c4178d85dce897823cb7e572c44f2dd60b76075bd6dcd5a9cabd3c5. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/11-3M4A5100.JPG.",
+      "dimensions": {
+        "width": 640,
+        "height": 427
+      },
+      "bytes": 23624,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-12",
+      "source_crop": "../materials/revision-2026-09-10-2131/12-3M4A5101.JPG",
+      "source_file": "3M4A5101.JPG",
+      "source_number": 12,
+      "source_sha256": "f903126d734a983c796376e1e8e76d37e7a657284c07b267ac33ef546f54778d",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/soldering-course/photo-12.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 3M4A5101.JPG, image 12; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: f903126d734a983c796376e1e8e76d37e7a657284c07b267ac33ef546f54778d. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/12-3M4A5101.JPG.",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      },
+      "bytes": 126140,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-12-small",
+      "source_crop": "../materials/revision-2026-09-10-2131/12-3M4A5101.JPG",
+      "source_file": "3M4A5101.JPG",
+      "source_number": 12,
+      "source_sha256": "f903126d734a983c796376e1e8e76d37e7a657284c07b267ac33ef546f54778d",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/soldering-course/photo-12-small.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 3M4A5101.JPG, image 12; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: f903126d734a983c796376e1e8e76d37e7a657284c07b267ac33ef546f54778d. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/12-3M4A5101.JPG.",
+      "dimensions": {
+        "width": 640,
+        "height": 427
+      },
+      "bytes": 31244,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-13",
+      "source_crop": "../materials/revision-2026-09-10-2131/13-3M4A5102.JPG",
+      "source_file": "3M4A5102.JPG",
+      "source_number": 13,
+      "source_sha256": "69da99686c6ef3f2f9f3f7e79892835bb98ea31dcd656380bc8dce90b5aa3e50",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/soldering-course/photo-13.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 3M4A5102.JPG, image 13; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: 69da99686c6ef3f2f9f3f7e79892835bb98ea31dcd656380bc8dce90b5aa3e50. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/13-3M4A5102.JPG.",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      },
+      "bytes": 105632,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-13-small",
+      "source_crop": "../materials/revision-2026-09-10-2131/13-3M4A5102.JPG",
+      "source_file": "3M4A5102.JPG",
+      "source_number": 13,
+      "source_sha256": "69da99686c6ef3f2f9f3f7e79892835bb98ea31dcd656380bc8dce90b5aa3e50",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/soldering-course/photo-13-small.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 3M4A5102.JPG, image 13; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: 69da99686c6ef3f2f9f3f7e79892835bb98ea31dcd656380bc8dce90b5aa3e50. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/13-3M4A5102.JPG.",
+      "dimensions": {
+        "width": 640,
+        "height": 427
+      },
+      "bytes": 25072,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-14",
+      "source_crop": "../materials/revision-2026-09-10-2131/14-3M4A5104.JPG",
+      "source_file": "3M4A5104.JPG",
+      "source_number": 14,
+      "source_sha256": "fb73714c945bcfa4e7f37d9032424d24b4518cdff05cb3fee38bf0a85517431b",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/soldering-course/photo-14.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 3M4A5104.JPG, image 14; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: fb73714c945bcfa4e7f37d9032424d24b4518cdff05cb3fee38bf0a85517431b. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/14-3M4A5104.JPG.",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      },
+      "bytes": 116222,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-14-small",
+      "source_crop": "../materials/revision-2026-09-10-2131/14-3M4A5104.JPG",
+      "source_file": "3M4A5104.JPG",
+      "source_number": 14,
+      "source_sha256": "fb73714c945bcfa4e7f37d9032424d24b4518cdff05cb3fee38bf0a85517431b",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/soldering-course/photo-14-small.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 3M4A5104.JPG, image 14; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: fb73714c945bcfa4e7f37d9032424d24b4518cdff05cb3fee38bf0a85517431b. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/14-3M4A5104.JPG.",
+      "dimensions": {
+        "width": 640,
+        "height": 427
+      },
+      "bytes": 25918,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-15",
+      "source_crop": "../materials/revision-2026-09-10-2131/15-3M4A5234.JPG",
+      "source_file": "3M4A5234.JPG",
+      "source_number": 15,
+      "source_sha256": "c8ce325410d2ea8972818f750a1ac2d0b6f080ae313a12d499f13e8fef22d65b",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/soldering-course/photo-15.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 3M4A5234.JPG, image 15; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: c8ce325410d2ea8972818f750a1ac2d0b6f080ae313a12d499f13e8fef22d65b. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/15-3M4A5234.JPG.",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      },
+      "bytes": 129466,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-15-small",
+      "source_crop": "../materials/revision-2026-09-10-2131/15-3M4A5234.JPG",
+      "source_file": "3M4A5234.JPG",
+      "source_number": 15,
+      "source_sha256": "c8ce325410d2ea8972818f750a1ac2d0b6f080ae313a12d499f13e8fef22d65b",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/soldering-course/photo-15-small.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 3M4A5234.JPG, image 15; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: c8ce325410d2ea8972818f750a1ac2d0b6f080ae313a12d499f13e8fef22d65b. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/15-3M4A5234.JPG.",
+      "dimensions": {
+        "width": 640,
+        "height": 427
+      },
+      "bytes": 34532,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-16",
+      "source_crop": "../materials/revision-2026-09-10-2131/16-3M4A6591.JPG",
+      "source_file": "3M4A6591.JPG",
+      "source_number": 16,
+      "source_sha256": "814df8c200ac51f08bc0244f8c6d9c326baa45e77f341843ce22593e38abee5a",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/soldering-course/photo-16.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 3M4A6591.JPG, image 16; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: 814df8c200ac51f08bc0244f8c6d9c326baa45e77f341843ce22593e38abee5a. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/16-3M4A6591.JPG.",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      },
+      "bytes": 122982,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-16-small",
+      "source_crop": "../materials/revision-2026-09-10-2131/16-3M4A6591.JPG",
+      "source_file": "3M4A6591.JPG",
+      "source_number": 16,
+      "source_sha256": "814df8c200ac51f08bc0244f8c6d9c326baa45e77f341843ce22593e38abee5a",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/soldering-course/photo-16-small.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 3M4A6591.JPG, image 16; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: 814df8c200ac51f08bc0244f8c6d9c326baa45e77f341843ce22593e38abee5a. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/16-3M4A6591.JPG.",
+      "dimensions": {
+        "width": 640,
+        "height": 427
+      },
+      "bytes": 27944,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-17",
+      "source_crop": "../materials/revision-2026-09-10-2131/17-3M4A6592.JPG",
+      "source_file": "3M4A6592.JPG",
+      "source_number": 17,
+      "source_sha256": "caae480692be7aa62d6459e0c9e531e98d19c31234034b3d7b54e0a4c73a133f",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/soldering-course/photo-17.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 3M4A6592.JPG, image 17; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: caae480692be7aa62d6459e0c9e531e98d19c31234034b3d7b54e0a4c73a133f. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/17-3M4A6592.JPG.",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      },
+      "bytes": 161038,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-17-small",
+      "source_crop": "../materials/revision-2026-09-10-2131/17-3M4A6592.JPG",
+      "source_file": "3M4A6592.JPG",
+      "source_number": 17,
+      "source_sha256": "caae480692be7aa62d6459e0c9e531e98d19c31234034b3d7b54e0a4c73a133f",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/soldering-course/photo-17-small.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 3M4A6592.JPG, image 17; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: caae480692be7aa62d6459e0c9e531e98d19c31234034b3d7b54e0a4c73a133f. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/17-3M4A6592.JPG.",
+      "dimensions": {
+        "width": 640,
+        "height": 427
+      },
+      "bytes": 38746,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-18",
+      "source_crop": "../materials/revision-2026-09-10-2131/18-5.JPG",
+      "source_file": "5.JPG",
+      "source_number": 18,
+      "source_sha256": "d277e71dd6416615855b4a397adddfef078ce2442ce741f5d177b06ae9f7ef22",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/soldering-course/photo-18.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 5.JPG, image 18; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: d277e71dd6416615855b4a397adddfef078ce2442ce741f5d177b06ae9f7ef22. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/18-5.JPG.",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      },
+      "bytes": 228374,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-18-small",
+      "source_crop": "../materials/revision-2026-09-10-2131/18-5.JPG",
+      "source_file": "5.JPG",
+      "source_number": 18,
+      "source_sha256": "d277e71dd6416615855b4a397adddfef078ce2442ce741f5d177b06ae9f7ef22",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/soldering-course/photo-18-small.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 5.JPG, image 18; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: d277e71dd6416615855b4a397adddfef078ce2442ce741f5d177b06ae9f7ef22. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/18-5.JPG.",
+      "dimensions": {
+        "width": 640,
+        "height": 427
+      },
+      "bytes": 51284,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-19",
+      "source_crop": "../materials/revision-2026-09-10-2131/19-8 (3).jpg",
+      "source_file": "8 (3).jpg",
+      "source_number": 19,
+      "source_sha256": "ba8a2a69b169a03cac3a3c0cdff3178f7cb1fd13ff14689fc7823703ce812545",
+      "source_dimensions": {
+        "width": 5932,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/soldering-course/photo-19.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 8 (3).jpg, image 19; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: ba8a2a69b169a03cac3a3c0cdff3178f7cb1fd13ff14689fc7823703ce812545. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/19-8 (3).jpg.",
+      "dimensions": {
+        "width": 1600,
+        "height": 1079
+      },
+      "bytes": 97418,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-19-small",
+      "source_crop": "../materials/revision-2026-09-10-2131/19-8 (3).jpg",
+      "source_file": "8 (3).jpg",
+      "source_number": 19,
+      "source_sha256": "ba8a2a69b169a03cac3a3c0cdff3178f7cb1fd13ff14689fc7823703ce812545",
+      "source_dimensions": {
+        "width": 5932,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/soldering-course/photo-19-small.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 8 (3).jpg, image 19; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: ba8a2a69b169a03cac3a3c0cdff3178f7cb1fd13ff14689fc7823703ce812545. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/19-8 (3).jpg.",
+      "dimensions": {
+        "width": 640,
+        "height": 432
+      },
+      "bytes": 20294,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-20",
+      "source_crop": "../materials/revision-2026-09-10-2131/20-12.12.jpg",
+      "source_file": "12.12.jpg",
+      "source_number": 20,
+      "source_sha256": "462cd1276921e008a54e5325fddbbf5e0605c7497f005cd916f15c75637137ab",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/soldering-course/photo-20.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 12.12.jpg, image 20; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: 462cd1276921e008a54e5325fddbbf5e0605c7497f005cd916f15c75637137ab. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/20-12.12.jpg.",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      },
+      "bytes": 206842,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [
+        "Supplied product photograph contains a faint circular background watermark; preserved without editing."
+      ],
+      "qa_status": "needs_parent_review"
+    },
+    {
+      "id": "photo-20-small",
+      "source_crop": "../materials/revision-2026-09-10-2131/20-12.12.jpg",
+      "source_file": "12.12.jpg",
+      "source_number": 20,
+      "source_sha256": "462cd1276921e008a54e5325fddbbf5e0605c7497f005cd916f15c75637137ab",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/soldering-course/photo-20-small.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 12.12.jpg, image 20; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: 462cd1276921e008a54e5325fddbbf5e0605c7497f005cd916f15c75637137ab. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/20-12.12.jpg.",
+      "dimensions": {
+        "width": 640,
+        "height": 427
+      },
+      "bytes": 37248,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [
+        "Supplied product photograph contains a faint circular background watermark; preserved without editing."
+      ],
+      "qa_status": "needs_parent_review"
+    },
+    {
+      "id": "photo-21",
+      "source_crop": "../materials/revision-2026-09-10-2131/21-111.jpg",
+      "source_file": "111.jpg",
+      "source_number": 21,
+      "source_sha256": "c5bbdefbde31efcbd4b1575639f96bf88b68fce9509e9277bb9de5a3fe55cfe8",
+      "source_dimensions": {
+        "width": 1280,
+        "height": 853,
+        "orientation": 1
+      },
+      "output_path": "public/images/soldering-course/photo-21.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 111.jpg, image 21; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: c5bbdefbde31efcbd4b1575639f96bf88b68fce9509e9277bb9de5a3fe55cfe8. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/21-111.jpg.",
+      "dimensions": {
+        "width": 1280,
+        "height": 853
+      },
+      "bytes": 67840,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-21-small",
+      "source_crop": "../materials/revision-2026-09-10-2131/21-111.jpg",
+      "source_file": "111.jpg",
+      "source_number": 21,
+      "source_sha256": "c5bbdefbde31efcbd4b1575639f96bf88b68fce9509e9277bb9de5a3fe55cfe8",
+      "source_dimensions": {
+        "width": 1280,
+        "height": 853,
+        "orientation": 1
+      },
+      "output_path": "public/images/soldering-course/photo-21-small.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 111.jpg, image 21; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: c5bbdefbde31efcbd4b1575639f96bf88b68fce9509e9277bb9de5a3fe55cfe8. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/21-111.jpg.",
+      "dimensions": {
+        "width": 640,
+        "height": 427
+      },
+      "bytes": 24746,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-22",
+      "source_crop": "../materials/revision-2026-09-10-2131/22-222.jpg",
+      "source_file": "222.jpg",
+      "source_number": 22,
+      "source_sha256": "facf8dea78dba028027ce4f3afc3ce1a43fbc9690a43935d0cb380312839cd84",
+      "source_dimensions": {
+        "width": 1280,
+        "height": 853,
+        "orientation": 1
+      },
+      "output_path": "public/images/soldering-course/photo-22.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 222.jpg, image 22; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: facf8dea78dba028027ce4f3afc3ce1a43fbc9690a43935d0cb380312839cd84. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/22-222.jpg.",
+      "dimensions": {
+        "width": 1280,
+        "height": 853
+      },
+      "bytes": 134448,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-22-small",
+      "source_crop": "../materials/revision-2026-09-10-2131/22-222.jpg",
+      "source_file": "222.jpg",
+      "source_number": 22,
+      "source_sha256": "facf8dea78dba028027ce4f3afc3ce1a43fbc9690a43935d0cb380312839cd84",
+      "source_dimensions": {
+        "width": 1280,
+        "height": 853,
+        "orientation": 1
+      },
+      "output_path": "public/images/soldering-course/photo-22-small.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 222.jpg, image 22; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: facf8dea78dba028027ce4f3afc3ce1a43fbc9690a43935d0cb380312839cd84. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/22-222.jpg.",
+      "dimensions": {
+        "width": 640,
+        "height": 427
+      },
+      "bytes": 44020,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-23",
+      "source_crop": "../materials/revision-2026-09-10-2131/23-777.jpg",
+      "source_file": "777.jpg",
+      "source_number": 23,
+      "source_sha256": "b8ed28eddb3ba986ddcfb7b70fc139185325f77ceeed6e7e14f7d4bcda6dd994",
+      "source_dimensions": {
+        "width": 1280,
+        "height": 853,
+        "orientation": 1
+      },
+      "output_path": "public/images/soldering-course/photo-23.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 777.jpg, image 23; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: b8ed28eddb3ba986ddcfb7b70fc139185325f77ceeed6e7e14f7d4bcda6dd994. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/23-777.jpg.",
+      "dimensions": {
+        "width": 1280,
+        "height": 853
+      },
+      "bytes": 115678,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-23-small",
+      "source_crop": "../materials/revision-2026-09-10-2131/23-777.jpg",
+      "source_file": "777.jpg",
+      "source_number": 23,
+      "source_sha256": "b8ed28eddb3ba986ddcfb7b70fc139185325f77ceeed6e7e14f7d4bcda6dd994",
+      "source_dimensions": {
+        "width": 1280,
+        "height": 853,
+        "orientation": 1
+      },
+      "output_path": "public/images/soldering-course/photo-23-small.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 777.jpg, image 23; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: b8ed28eddb3ba986ddcfb7b70fc139185325f77ceeed6e7e14f7d4bcda6dd994. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/23-777.jpg.",
+      "dimensions": {
+        "width": 640,
+        "height": 427
+      },
+      "bytes": 40944,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-24",
+      "source_crop": "../materials/revision-2026-09-10-2131/24-888.jpg",
+      "source_file": "888.jpg",
+      "source_number": 24,
+      "source_sha256": "45c80546070081b588e2e74918ef7d54273433163ae71b2f0efebff4f413b461",
+      "source_dimensions": {
+        "width": 1280,
+        "height": 853,
+        "orientation": 1
+      },
+      "output_path": "public/images/soldering-course/photo-24.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 888.jpg, image 24; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: 45c80546070081b588e2e74918ef7d54273433163ae71b2f0efebff4f413b461. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/24-888.jpg.",
+      "dimensions": {
+        "width": 1280,
+        "height": 853
+      },
+      "bytes": 43308,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-24-small",
+      "source_crop": "../materials/revision-2026-09-10-2131/24-888.jpg",
+      "source_file": "888.jpg",
+      "source_number": 24,
+      "source_sha256": "45c80546070081b588e2e74918ef7d54273433163ae71b2f0efebff4f413b461",
+      "source_dimensions": {
+        "width": 1280,
+        "height": 853,
+        "orientation": 1
+      },
+      "output_path": "public/images/soldering-course/photo-24-small.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 888.jpg, image 24; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: 45c80546070081b588e2e74918ef7d54273433163ae71b2f0efebff4f413b461. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/24-888.jpg.",
+      "dimensions": {
+        "width": 640,
+        "height": 427
+      },
+      "bytes": 14334,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-25",
+      "source_crop": "../materials/revision-2026-09-10-2131/25-IMG_8051.JPG",
+      "source_file": "IMG_8051.JPG",
+      "source_number": 25,
+      "source_sha256": "caf6b5e196a8eb62064ad5e3d09a08ab6169d41cee99e7bbb154aa26d6895083",
+      "source_dimensions": {
+        "width": 4032,
+        "height": 3024,
+        "orientation": 6
+      },
+      "output_path": "public/images/soldering-course/photo-25.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file IMG_8051.JPG, image 25; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: caf6b5e196a8eb62064ad5e3d09a08ab6169d41cee99e7bbb154aa26d6895083. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/25-IMG_8051.JPG.",
+      "dimensions": {
+        "width": 1600,
+        "height": 2133
+      },
+      "bytes": 602854,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-25-small",
+      "source_crop": "../materials/revision-2026-09-10-2131/25-IMG_8051.JPG",
+      "source_file": "IMG_8051.JPG",
+      "source_number": 25,
+      "source_sha256": "caf6b5e196a8eb62064ad5e3d09a08ab6169d41cee99e7bbb154aa26d6895083",
+      "source_dimensions": {
+        "width": 4032,
+        "height": 3024,
+        "orientation": 6
+      },
+      "output_path": "public/images/soldering-course/photo-25-small.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file IMG_8051.JPG, image 25; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: caf6b5e196a8eb62064ad5e3d09a08ab6169d41cee99e7bbb154aa26d6895083. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/25-IMG_8051.JPG.",
+      "dimensions": {
+        "width": 640,
+        "height": 853
+      },
+      "bytes": 105788,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-26",
+      "source_crop": "../materials/revision-2026-09-10-2131/26-IMG_8058.JPG",
+      "source_file": "IMG_8058.JPG",
+      "source_number": 26,
+      "source_sha256": "d72b0a2350a21bf787e008744ae7790a6351f1c7b3e48d19ff721fec76f453a2",
+      "source_dimensions": {
+        "width": 4032,
+        "height": 3024,
+        "orientation": 6
+      },
+      "output_path": "public/images/soldering-course/photo-26.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file IMG_8058.JPG, image 26; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: d72b0a2350a21bf787e008744ae7790a6351f1c7b3e48d19ff721fec76f453a2. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/26-IMG_8058.JPG.",
+      "dimensions": {
+        "width": 1600,
+        "height": 2133
+      },
+      "bytes": 618712,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-26-small",
+      "source_crop": "../materials/revision-2026-09-10-2131/26-IMG_8058.JPG",
+      "source_file": "IMG_8058.JPG",
+      "source_number": 26,
+      "source_sha256": "d72b0a2350a21bf787e008744ae7790a6351f1c7b3e48d19ff721fec76f453a2",
+      "source_dimensions": {
+        "width": 4032,
+        "height": 3024,
+        "orientation": 6
+      },
+      "output_path": "public/images/soldering-course/photo-26-small.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file IMG_8058.JPG, image 26; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 21:31–21:33. Source SHA-256: d72b0a2350a21bf787e008744ae7790a6351f1c7b3e48d19ff721fec76f453a2. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2131/26-IMG_8058.JPG.",
+      "dimensions": {
+        "width": 640,
+        "height": 853
+      },
+      "bytes": 108222,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    }
+  ],
+  "semantic": [
+    {
+      "id": "reference-1",
+      "source_crop": "../materials/revision-2026-09-10-2131/01-Снимок экрана 2026-09-10 210133.jpg",
+      "implementation": "Use existing optimal-course Astro page structure and semantic title, description, programme and audience text. Do not render the reference screenshot as page content.",
+      "notes": "Client-supplied layout and content reference; original preserved.",
+      "qa_status": "needs_parent_review"
+    },
+    {
+      "id": "reference-2",
+      "source_crop": "../materials/revision-2026-09-10-2131/02-Снимок экрана 2026-09-10 210104.jpg",
+      "implementation": "Build the supplied fact values and programme using the existing optimal-course HTML components. CSS owns responsive layout, spacing and typography; supplied icons compose beside semantic text.",
+      "notes": "Client-supplied content reference; original preserved.",
+      "qa_status": "needs_parent_review"
+    },
+    {
+      "id": "reference-10-excluded-documents",
+      "source_crop": "../materials/revision-2026-09-10-2131/10-Снимок экрана 2026-09-10 210813.jpg",
+      "implementation": "Do not publish this screenshot or build any documents block. Preserve it in the private source packet only; course facts must state no document. Keep the course registration section.",
+      "notes": "User explicitly excluded documents for the soldering course.",
+      "qa_status": "accepted"
+    }
+  ],
+  "execution_order": [
+    "Preserve and hash all 26 client originals",
+    "Convert icons 3–9",
+    "Convert photos 11–26 with 640px variants",
+    "Inspect labeled complete-frame contact sheets"
+  ],
+  "blockers": [],
+  "assumptions": [
+    "Direct client assets only; no generation, retouching or cropping.",
+    "Photos are limited by width; never enlarge. Document screenshot item 10 is preserved as reference only and excluded from all published outputs.",
+    "Original order 3–9 maps to icon-1–icon-7; photos keep packet numbering 11–26; item 10 has no production output.",
+    "CSS owns framing, captions and responsive display. Baked checkerboard backgrounds in supplied JPEG icons are preserved."
+  ]
+}

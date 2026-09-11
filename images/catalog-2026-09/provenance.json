@@ -1,0 +1,369 @@
+{
+  "origin": {
+    "chat": "ОКТАГОН. НОВЫЙ САЙТ!",
+    "sender": "Харламов Алексей",
+    "date": "2026-09-10"
+  },
+  "produce": [],
+  "direct": [
+    {
+      "id": "fpv-yellow-drone",
+      "source_crop": "../materials/revision-2026-09-10-covers/01-photo_2025-10-08_12-18-08.jpg",
+      "source_file": "photo_2025-10-08_12-18-08.jpg",
+      "source_sha256": "f9338b4dee37344c3c94c439ddc4c4e9554cbe72e0ffe3c96211ad1b2921831c",
+      "output_path": "public/images/catalog-2026-09/fpv-yellow-drone.webp",
+      "uses": [
+        {
+          "card": "fpv-direction",
+          "time": "21:56"
+        },
+        {
+          "card": "optimal-course",
+          "time": "22:06"
+        }
+      ],
+      "strategy": "Direct full-frame conversion, EXIF auto-orientation, proportional resize without enlargement, WebP quality 88",
+      "provenance": "Direct client asset: photo_2025-10-08_12-18-08.jpg. Telegram chat ОКТАГОН. НОВЫЙ САЙТ!, sender Харламов Алексей, 2026-09-10; 21:56 fpv-direction; 22:06 optimal-course. Source SHA-256: f9338b4dee37344c3c94c439ddc4c4e9554cbe72e0ffe3c96211ad1b2921831c. Original preserved at ../materials/revision-2026-09-10-covers/01-photo_2025-10-08_12-18-08.jpg. Full-frame proportional WebP conversion, EXIF auto-orientation, max width 1400, no enlargement, no cropping, no AI or content editing. Visible source content: Yellow FPV quadcopter in flight against a blue-grey sky.",
+      "dimensions": {
+        "width": 1280,
+        "height": 853
+      },
+      "source_dimensions": {
+        "width": 1280,
+        "height": 853
+      },
+      "format": "webp",
+      "transparency": false,
+      "bytes": 53592,
+      "visible_content": "Yellow FPV quadcopter in flight against a blue-grey sky.",
+      "suggested_focal_position": "50% 52%",
+      "crop_notes": "Wide rotor span: preserve horizontal coverage.",
+      "deviations": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "commercial-drone",
+      "source_crop": "../materials/revision-2026-09-10-covers/02-photo_2026-06-02_12-25-49 (3).jpg",
+      "source_file": "photo_2026-06-02_12-25-49 (3).jpg",
+      "source_sha256": "6629002b51a76ab2c22a7460c5d6a18586c885ee5d63cfdce7111de37e076a19",
+      "output_path": "public/images/catalog-2026-09/commercial-drone.webp",
+      "uses": [
+        {
+          "card": "commercial-direction",
+          "time": "21:58"
+        }
+      ],
+      "strategy": "Direct full-frame conversion, EXIF auto-orientation, proportional resize without enlargement, WebP quality 88",
+      "provenance": "Direct client asset: photo_2026-06-02_12-25-49 (3).jpg. Telegram chat ОКТАГОН. НОВЫЙ САЙТ!, sender Харламов Алексей, 2026-09-10; 21:58 commercial-direction. Source SHA-256: 6629002b51a76ab2c22a7460c5d6a18586c885ee5d63cfdce7111de37e076a19. Original preserved at ../materials/revision-2026-09-10-covers/02-photo_2026-06-02_12-25-49 (3).jpg. Full-frame proportional WebP conversion, EXIF auto-orientation, max width 1400, no enlargement, no cropping, no AI or content editing. Visible source content: Grey camera quadcopter in flight against a blue sky.",
+      "dimensions": {
+        "width": 1280,
+        "height": 853
+      },
+      "source_dimensions": {
+        "width": 1280,
+        "height": 853
+      },
+      "format": "webp",
+      "transparency": false,
+      "bytes": 30158,
+      "visible_content": "Grey camera quadcopter in flight against a blue sky.",
+      "suggested_focal_position": "50% 55%",
+      "crop_notes": "Keep the camera and all four arms visible.",
+      "deviations": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "svo-operator",
+      "source_crop": "../materials/revision-2026-09-10-covers/03-61b987e4868a128cc60c2fc73c43b91e_47a16e6a_f5e2_4df4_bf12_4f0b888cd7a4.png",
+      "source_file": "61b987e4868a128cc60c2fc73c43b91e_47a16e6a_f5e2_4df4_bf12_4f0b888cd7a4.png",
+      "source_sha256": "ddbc6153da948bb04ff3dcf2f0de07b27841fae90d762f6a9a3017560bc6f011",
+      "output_path": "public/images/catalog-2026-09/svo-operator.webp",
+      "uses": [
+        {
+          "card": "svo-direction",
+          "time": "22:01"
+        }
+      ],
+      "strategy": "Direct full-frame conversion, EXIF auto-orientation, proportional resize without enlargement, WebP quality 88",
+      "provenance": "Direct client asset: 61b987e4868a128cc60c2fc73c43b91e_47a16e6a_f5e2_4df4_bf12_4f0b888cd7a4.png. Telegram chat ОКТАГОН. НОВЫЙ САЙТ!, sender Харламов Алексей, 2026-09-10; 22:01 svo-direction. Source SHA-256: ddbc6153da948bb04ff3dcf2f0de07b27841fae90d762f6a9a3017560bc6f011. Original preserved at ../materials/revision-2026-09-10-covers/03-61b987e4868a128cc60c2fc73c43b91e_47a16e6a_f5e2_4df4_bf12_4f0b888cd7a4.png. Full-frame proportional WebP conversion, EXIF auto-orientation, max width 1400, no enlargement, no cropping, no AI or content editing. Visible source content: Seated operator wearing FPV goggles, black hood and camouflage trousers outdoors.",
+      "dimensions": {
+        "width": 1400,
+        "height": 1400
+      },
+      "source_dimensions": {
+        "width": 2048,
+        "height": 2048
+      },
+      "format": "webp",
+      "transparency": false,
+      "bytes": 312736,
+      "visible_content": "Seated operator wearing FPV goggles, black hood and camouflage trousers outdoors.",
+      "suggested_focal_position": "48% 30%",
+      "crop_notes": "Square source: landscape framing should retain goggles and upper body.",
+      "deviations": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "basic-fpv",
+      "source_crop": "../materials/revision-2026-09-10-covers/04-photo_2026-02-11_00-01-10.jpg",
+      "source_file": "photo_2026-02-11_00-01-10.jpg",
+      "source_sha256": "8628dba802589d9e62f43d413001a6654b90c8e43853a0bb293aac0c7282d2ca",
+      "output_path": "public/images/catalog-2026-09/basic-fpv.webp",
+      "uses": [
+        {
+          "card": "basic-course",
+          "time": "22:04"
+        }
+      ],
+      "strategy": "Direct full-frame conversion, EXIF auto-orientation, proportional resize without enlargement, WebP quality 88",
+      "provenance": "Direct client asset: photo_2026-02-11_00-01-10.jpg. Telegram chat ОКТАГОН. НОВЫЙ САЙТ!, sender Харламов Алексей, 2026-09-10; 22:04 basic-course. Source SHA-256: 8628dba802589d9e62f43d413001a6654b90c8e43853a0bb293aac0c7282d2ca. Original preserved at ../materials/revision-2026-09-10-covers/04-photo_2026-02-11_00-01-10.jpg. Full-frame proportional WebP conversion, EXIF auto-orientation, max width 1400, no enlargement, no cropping, no AI or content editing. Visible source content: Small ducted FPV drone on a tabletop against a bright blurred window.",
+      "dimensions": {
+        "width": 1280,
+        "height": 853
+      },
+      "source_dimensions": {
+        "width": 1280,
+        "height": 853
+      },
+      "format": "webp",
+      "transparency": false,
+      "bytes": 32932,
+      "visible_content": "Small ducted FPV drone on a tabletop against a bright blurred window.",
+      "suggested_focal_position": "50% 58%",
+      "crop_notes": "Exact filename verified from live Telegram result; 00, not 06.",
+      "deviations": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "soldering",
+      "source_crop": "../materials/revision-2026-09-10-covers/05-888.jpg",
+      "source_file": "888.jpg",
+      "source_sha256": "45c80546070081b588e2e74918ef7d54273433163ae71b2f0efebff4f413b461",
+      "output_path": "public/images/catalog-2026-09/soldering.webp",
+      "uses": [
+        {
+          "card": "soldering-course",
+          "time": "22:11"
+        }
+      ],
+      "strategy": "Direct full-frame conversion, EXIF auto-orientation, proportional resize without enlargement, WebP quality 88",
+      "provenance": "Direct client asset: 888.jpg. Telegram chat ОКТАГОН. НОВЫЙ САЙТ!, sender Харламов Алексей, 2026-09-10; 22:11 soldering-course. Source SHA-256: 45c80546070081b588e2e74918ef7d54273433163ae71b2f0efebff4f413b461. Original preserved at ../materials/revision-2026-09-10-covers/05-888.jpg. Full-frame proportional WebP conversion, EXIF auto-orientation, max width 1400, no enlargement, no cropping, no AI or content editing. Visible source content: Smoking soldering iron, metal stand and yellow-rimmed solder spool.",
+      "dimensions": {
+        "width": 1280,
+        "height": 853
+      },
+      "source_dimensions": {
+        "width": 1280,
+        "height": 853
+      },
+      "format": "webp",
+      "transparency": false,
+      "bytes": 49700,
+      "visible_content": "Smoking soldering iron, metal stand and yellow-rimmed solder spool.",
+      "suggested_focal_position": "50% 55%",
+      "crop_notes": "Keep iron tip at left and spool at right.",
+      "deviations": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "technik-components",
+      "source_crop": "../materials/revision-2026-09-10-covers/06-e7ae233ebc79c62402687a402bb43fcd_c6fad910_b639_4796_ac20_bdcb73df39f8.png",
+      "source_file": "e7ae233ebc79c62402687a402bb43fcd_c6fad910_b639_4796_ac20_bdcb73df39f8.png",
+      "source_sha256": "6712ad778bff02aa7ff47832752fd5d6f79d45a6105332a7892f93a7af7dd6f7",
+      "output_path": "public/images/catalog-2026-09/technik-components.webp",
+      "uses": [
+        {
+          "card": "technik-course",
+          "time": "22:27"
+        }
+      ],
+      "strategy": "Direct full-frame conversion, EXIF auto-orientation, proportional resize without enlargement, WebP quality 88",
+      "provenance": "Direct client asset: e7ae233ebc79c62402687a402bb43fcd_c6fad910_b639_4796_ac20_bdcb73df39f8.png. Telegram chat ОКТАГОН. НОВЫЙ САЙТ!, sender Харламов Алексей, 2026-09-10; 22:27 technik-course. Source SHA-256: 6712ad778bff02aa7ff47832752fd5d6f79d45a6105332a7892f93a7af7dd6f7. Original preserved at ../materials/revision-2026-09-10-covers/06-e7ae233ebc79c62402687a402bb43fcd_c6fad910_b639_4796_ac20_bdcb73df39f8.png. Full-frame proportional WebP conversion, EXIF auto-orientation, max width 1400, no enlargement, no cropping, no AI or content editing. Visible source content: Drone parts, boards, motors, carbon frames and propellers laid out on a blue work mat.",
+      "dimensions": {
+        "width": 1400,
+        "height": 1400
+      },
+      "source_dimensions": {
+        "width": 2048,
+        "height": 2048
+      },
+      "format": "webp",
+      "transparency": false,
+      "bytes": 304572,
+      "visible_content": "Drone parts, boards, motors, carbon frames and propellers laid out on a blue work mat.",
+      "suggested_focal_position": "50% 45%",
+      "crop_notes": "Square source: all parts occupy the full frame; avoid heavy crop where possible.",
+      "deviations": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "pilot",
+      "source_crop": "../materials/revision-2026-09-10-covers/07-71202ddd2e346663aa60346279450792_ee6b5902_832c_49e5_8dce_aa3a8884df82.png",
+      "source_file": "71202ddd2e346663aa60346279450792_ee6b5902_832c_49e5_8dce_aa3a8884df82.png",
+      "source_sha256": "4b2f9dd4360a5dc7f223ba7ca6b0927910b7a7dd264c4a2423abbe8e2a1cf6ac",
+      "output_path": "public/images/catalog-2026-09/pilot.webp",
+      "uses": [
+        {
+          "card": "pilot-course",
+          "time": "22:29"
+        }
+      ],
+      "strategy": "Direct full-frame conversion, EXIF auto-orientation, proportional resize without enlargement, WebP quality 88",
+      "provenance": "Direct client asset: 71202ddd2e346663aa60346279450792_ee6b5902_832c_49e5_8dce_aa3a8884df82.png. Telegram chat ОКТАГОН. НОВЫЙ САЙТ!, sender Харламов Алексей, 2026-09-10; 22:29 pilot-course. Source SHA-256: 4b2f9dd4360a5dc7f223ba7ca6b0927910b7a7dd264c4a2423abbe8e2a1cf6ac. Original preserved at ../materials/revision-2026-09-10-covers/07-71202ddd2e346663aa60346279450792_ee6b5902_832c_49e5_8dce_aa3a8884df82.png. Full-frame proportional WebP conversion, EXIF auto-orientation, max width 1400, no enlargement, no cropping, no AI or content editing. Visible source content: Pilot holding a radio controller outdoors, with a quadcopter in the foreground.",
+      "dimensions": {
+        "width": 1400,
+        "height": 1400
+      },
+      "source_dimensions": {
+        "width": 2048,
+        "height": 2048
+      },
+      "format": "webp",
+      "transparency": false,
+      "bytes": 174634,
+      "visible_content": "Pilot holding a radio controller outdoors, with a quadcopter in the foreground.",
+      "suggested_focal_position": "50% 28%",
+      "crop_notes": "Square source: landscape crop cannot show face and foreground drone together. Prioritize face/controller.",
+      "deviations": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "instructor",
+      "source_crop": "../materials/revision-2026-09-10-covers/08-cd372c1ac1ff5aa36668a53beb3f19ac_8c9e2a65_cb1b_4453_a7a2_cdfce4f07311.png",
+      "source_file": "cd372c1ac1ff5aa36668a53beb3f19ac_8c9e2a65_cb1b_4453_a7a2_cdfce4f07311.png",
+      "source_sha256": "1b83f4bac764119cde2920653e844d37f48505f7f11571596e7dda1465f6b13e",
+      "output_path": "public/images/catalog-2026-09/instructor.webp",
+      "uses": [
+        {
+          "card": "instructor-course",
+          "time": "22:36"
+        }
+      ],
+      "strategy": "Direct full-frame conversion, EXIF auto-orientation, proportional resize without enlargement, WebP quality 88",
+      "provenance": "Direct client asset: cd372c1ac1ff5aa36668a53beb3f19ac_8c9e2a65_cb1b_4453_a7a2_cdfce4f07311.png. Telegram chat ОКТАГОН. НОВЫЙ САЙТ!, sender Харламов Алексей, 2026-09-10; 22:36 instructor-course. Source SHA-256: 1b83f4bac764119cde2920653e844d37f48505f7f11571596e7dda1465f6b13e. Original preserved at ../materials/revision-2026-09-10-covers/08-cd372c1ac1ff5aa36668a53beb3f19ac_8c9e2a65_cb1b_4453_a7a2_cdfce4f07311.png. Full-frame proportional WebP conversion, EXIF auto-orientation, max width 1400, no enlargement, no cropping, no AI or content editing. Visible source content: Seated instructor in an Octagon uniform, hands clasped on a white table.",
+      "dimensions": {
+        "width": 1400,
+        "height": 1400
+      },
+      "source_dimensions": {
+        "width": 2048,
+        "height": 2048
+      },
+      "format": "webp",
+      "transparency": false,
+      "bytes": 272848,
+      "visible_content": "Seated instructor in an Octagon uniform, hands clasped on a white table.",
+      "suggested_focal_position": "50% 30%",
+      "crop_notes": "Preserve face and physical uniform patches; square source needs upper-body framing.",
+      "deviations": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "bas-aircraft",
+      "source_crop": "../materials/revision-2026-09-10-covers/09-b7a91276e99ee1631d2335c8d01248e8_73a00e7d_1520_4f2a_ad09_c3f26e4cb6e4.png",
+      "source_file": "b7a91276e99ee1631d2335c8d01248e8_73a00e7d_1520_4f2a_ad09_c3f26e4cb6e4.png",
+      "source_sha256": "28131da0d24f22fb48ab2f7adb1249dd05ab3751c656068d18a52b092ea572d5",
+      "output_path": "public/images/catalog-2026-09/bas-aircraft.webp",
+      "uses": [
+        {
+          "card": "bas-direction",
+          "time": "22:55"
+        }
+      ],
+      "strategy": "Direct full-frame conversion, EXIF auto-orientation, proportional resize without enlargement, WebP quality 88",
+      "provenance": "Direct client asset: b7a91276e99ee1631d2335c8d01248e8_73a00e7d_1520_4f2a_ad09_c3f26e4cb6e4.png. Telegram chat ОКТАГОН. НОВЫЙ САЙТ!, sender Харламов Алексей, 2026-09-10; 22:55 bas-direction. Source SHA-256: 28131da0d24f22fb48ab2f7adb1249dd05ab3751c656068d18a52b092ea572d5. Original preserved at ../materials/revision-2026-09-10-covers/09-b7a91276e99ee1631d2335c8d01248e8_73a00e7d_1520_4f2a_ad09_c3f26e4cb6e4.png. Full-frame proportional WebP conversion, EXIF auto-orientation, max width 1400, no enlargement, no cropping, no AI or content editing. Visible source content: Large fixed-wing VTOL aircraft hovering above a dusty field.",
+      "dimensions": {
+        "width": 1400,
+        "height": 1050
+      },
+      "source_dimensions": {
+        "width": 2048,
+        "height": 1536
+      },
+      "format": "webp",
+      "transparency": false,
+      "bytes": 213694,
+      "visible_content": "Large fixed-wing VTOL aircraft hovering above a dusty field.",
+      "suggested_focal_position": "50% 48%",
+      "crop_notes": "Wide wingspan extends almost edge to edge; preserve width.",
+      "deviations": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "protection-facility",
+      "source_crop": "../materials/revision-2026-09-10-covers/10-4f05c668db8a397e5f7e2fa768e1f9a8_18a1b2ba_fc72_48d4_b7eb_17e711a8f936.png",
+      "source_file": "4f05c668db8a397e5f7e2fa768e1f9a8_18a1b2ba_fc72_48d4_b7eb_17e711a8f936.png",
+      "source_sha256": "48f53e3759e676a71f80e0813d9905c7dca1cd1f5682707317b2f6fd1573e65d",
+      "output_path": "public/images/catalog-2026-09/protection-facility.webp",
+      "uses": [
+        {
+          "card": "protection-direction",
+          "time": "23:05"
+        }
+      ],
+      "strategy": "Direct full-frame conversion, EXIF auto-orientation, proportional resize without enlargement, WebP quality 88",
+      "provenance": "Direct client asset: 4f05c668db8a397e5f7e2fa768e1f9a8_18a1b2ba_fc72_48d4_b7eb_17e711a8f936.png. Telegram chat ОКТАГОН. НОВЫЙ САЙТ!, sender Харламов Алексей, 2026-09-10; 23:05 protection-direction. Source SHA-256: 48f53e3759e676a71f80e0813d9905c7dca1cd1f5682707317b2f6fd1573e65d. Original preserved at ../materials/revision-2026-09-10-covers/10-4f05c668db8a397e5f7e2fa768e1f9a8_18a1b2ba_fc72_48d4_b7eb_17e711a8f936.png. Full-frame proportional WebP conversion, EXIF auto-orientation, max width 1400, no enlargement, no cropping, no AI or content editing. Visible source content: Industrial facility beneath a transparent protective dome.",
+      "dimensions": {
+        "width": 1400,
+        "height": 1050
+      },
+      "source_dimensions": {
+        "width": 2048,
+        "height": 1536
+      },
+      "format": "webp",
+      "transparency": false,
+      "bytes": 263640,
+      "visible_content": "Industrial facility beneath a transparent protective dome.",
+      "suggested_focal_position": "50% 52%",
+      "crop_notes": "Client-supplied composite artwork is intrinsic; retain dome and industrial site.",
+      "deviations": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "protection-specialist",
+      "source_crop": "../materials/revision-2026-09-10-covers/11-0e7daacac73781b3d4cd89cdd7bd62a1_95a6b5a5_e0f4_4c44_b0c3_7e185b13b1a3.png",
+      "source_file": "0e7daacac73781b3d4cd89cdd7bd62a1_95a6b5a5_e0f4_4c44_b0c3_7e185b13b1a3.png",
+      "source_sha256": "795a97720e02258c28b10c70841db80c2382a38fe2085eb2a7ee416f08e86877",
+      "output_path": "public/images/catalog-2026-09/protection-specialist.webp",
+      "uses": [
+        {
+          "card": "protection-course",
+          "time": "23:12"
+        }
+      ],
+      "strategy": "Direct full-frame conversion, EXIF auto-orientation, proportional resize without enlargement, WebP quality 88",
+      "provenance": "Direct client asset: 0e7daacac73781b3d4cd89cdd7bd62a1_95a6b5a5_e0f4_4c44_b0c3_7e185b13b1a3.png. Telegram chat ОКТАГОН. НОВЫЙ САЙТ!, sender Харламов Алексей, 2026-09-10; 23:12 protection-course. Source SHA-256: 795a97720e02258c28b10c70841db80c2382a38fe2085eb2a7ee416f08e86877. Original preserved at ../materials/revision-2026-09-10-covers/11-0e7daacac73781b3d4cd89cdd7bd62a1_95a6b5a5_e0f4_4c44_b0c3_7e185b13b1a3.png. Full-frame proportional WebP conversion, EXIF auto-orientation, max width 1400, no enlargement, no cropping, no AI or content editing. Visible source content: Uniformed specialist holding counter-drone equipment against an industrial skyline at sunset.",
+      "dimensions": {
+        "width": 1400,
+        "height": 1050
+      },
+      "source_dimensions": {
+        "width": 2048,
+        "height": 1536
+      },
+      "format": "webp",
+      "transparency": false,
+      "bytes": 159870,
+      "visible_content": "Uniformed specialist holding counter-drone equipment against an industrial skyline at sunset.",
+      "suggested_focal_position": "50% 40%",
+      "crop_notes": "Preserve head at left and orange equipment nose at right.",
+      "deviations": [],
+      "qa_status": "accepted"
+    }
+  ],
+  "semantic": [],
+  "execution_order": [
+    "Resolve exact client filenames and hashes",
+    "Preserve 11 originals",
+    "Convert complete frames to WebP at maximum width 1400 without enlargement",
+    "Embed source provenance",
+    "Compare all original/converted pairs"
+  ],
+  "blockers": [],
+  "assumptions": [
+    "CSS owns responsive framing, rounded corners and captions.",
+    "Original physical labels and client composite artwork remain untouched.",
+    "Focal positions are suggestions for CSS and have not been applied to asset pixels."
+  ]
+}

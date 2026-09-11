@@ -1,0 +1,802 @@
+{
+  "source": "../materials/revision-2026-09-10-2028/README.md",
+  "produce": [],
+  "direct": [
+    {
+      "id": "icon-1",
+      "source_crop": "../materials/revision-2026-09-10-2028/03-982c1250070f9d8e6318d415b295a216_c70aa088_d0d2_481b_8433_2f4ecf5ae772.jpg",
+      "source_file": "982c1250070f9d8e6318d415b295a216_c70aa088_d0d2_481b_8433_2f4ecf5ae772.jpg",
+      "source_number": 3,
+      "source_sha256": "5b3622d281f9339b0c7684596bc0d0b1c6f1769fc9fde47d71d1bfa1fec73cac",
+      "source_dimensions": {
+        "width": 2048,
+        "height": 2048,
+        "orientation": 1
+      },
+      "output_path": "public/images/instructor-course/icon-1.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 982c1250070f9d8e6318d415b295a216_c70aa088_d0d2_481b_8433_2f4ecf5ae772.jpg, image 3; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 20:28. Source SHA-256: 5b3622d281f9339b0c7684596bc0d0b1c6f1769fc9fde47d71d1bfa1fec73cac. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2028/03-982c1250070f9d8e6318d415b295a216_c70aa088_d0d2_481b_8433_2f4ecf5ae772.jpg.",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "bytes": 19126,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [
+        "Checkerboard background is baked into the supplied JPEG and intentionally preserved."
+      ],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "icon-2",
+      "source_crop": "../materials/revision-2026-09-10-2028/04-b93e90a58da1263748eeed85f12d0646_f7b9fbc2_bf3e_4ce0_a8d6_50e355c304ce.jpg",
+      "source_file": "b93e90a58da1263748eeed85f12d0646_f7b9fbc2_bf3e_4ce0_a8d6_50e355c304ce.jpg",
+      "source_number": 4,
+      "source_sha256": "6ab33f358af09db5aa89dc97d56da75424f09c02a2a9b96a78295075d3ecd542",
+      "source_dimensions": {
+        "width": 2048,
+        "height": 2048,
+        "orientation": 1
+      },
+      "output_path": "public/images/instructor-course/icon-2.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file b93e90a58da1263748eeed85f12d0646_f7b9fbc2_bf3e_4ce0_a8d6_50e355c304ce.jpg, image 4; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 20:28. Source SHA-256: 6ab33f358af09db5aa89dc97d56da75424f09c02a2a9b96a78295075d3ecd542. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2028/04-b93e90a58da1263748eeed85f12d0646_f7b9fbc2_bf3e_4ce0_a8d6_50e355c304ce.jpg.",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "bytes": 22838,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [
+        "Checkerboard background is baked into the supplied JPEG and intentionally preserved."
+      ],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "icon-3",
+      "source_crop": "../materials/revision-2026-09-10-2028/05-46ed95ce1f23ee39a3e9ddf02c541215_df35428a_a86f_4a5e_b835_c656c1bfe07e.jpg",
+      "source_file": "46ed95ce1f23ee39a3e9ddf02c541215_df35428a_a86f_4a5e_b835_c656c1bfe07e.jpg",
+      "source_number": 5,
+      "source_sha256": "f5845675f1f6f7aea986e3e327d86139a973e89098ba232d3ac9cbc6cd4a558c",
+      "source_dimensions": {
+        "width": 2048,
+        "height": 2048,
+        "orientation": 1
+      },
+      "output_path": "public/images/instructor-course/icon-3.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 46ed95ce1f23ee39a3e9ddf02c541215_df35428a_a86f_4a5e_b835_c656c1bfe07e.jpg, image 5; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 20:28. Source SHA-256: f5845675f1f6f7aea986e3e327d86139a973e89098ba232d3ac9cbc6cd4a558c. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2028/05-46ed95ce1f23ee39a3e9ddf02c541215_df35428a_a86f_4a5e_b835_c656c1bfe07e.jpg.",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "bytes": 20952,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [
+        "Checkerboard background is baked into the supplied JPEG and intentionally preserved."
+      ],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "icon-4",
+      "source_crop": "../materials/revision-2026-09-10-2028/06-585533a71447e623bbcb42a00f60fcb9_365bb6ae_ce22_41ce_b3bd_6a7f3f3745ff.jpg",
+      "source_file": "585533a71447e623bbcb42a00f60fcb9_365bb6ae_ce22_41ce_b3bd_6a7f3f3745ff.jpg",
+      "source_number": 6,
+      "source_sha256": "bf7733a90161529e2a2255e075616208772b80ddf977b01d8777d8020b1bb84b",
+      "source_dimensions": {
+        "width": 2048,
+        "height": 2048,
+        "orientation": 1
+      },
+      "output_path": "public/images/instructor-course/icon-4.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 585533a71447e623bbcb42a00f60fcb9_365bb6ae_ce22_41ce_b3bd_6a7f3f3745ff.jpg, image 6; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 20:28. Source SHA-256: bf7733a90161529e2a2255e075616208772b80ddf977b01d8777d8020b1bb84b. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2028/06-585533a71447e623bbcb42a00f60fcb9_365bb6ae_ce22_41ce_b3bd_6a7f3f3745ff.jpg.",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "bytes": 23962,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [
+        "Checkerboard background is baked into the supplied JPEG and intentionally preserved."
+      ],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "icon-5",
+      "source_crop": "../materials/revision-2026-09-10-2028/07-928135ac782b0e5551c1deb89e7ba65a_020e85b6_3d73_443b_8915_9638ad11fee7.jpg",
+      "source_file": "928135ac782b0e5551c1deb89e7ba65a_020e85b6_3d73_443b_8915_9638ad11fee7.jpg",
+      "source_number": 7,
+      "source_sha256": "4d4aac6e6073981af1ddde6c1102be08d52524dca50b47f52af65b6535f614be",
+      "source_dimensions": {
+        "width": 2048,
+        "height": 2048,
+        "orientation": 1
+      },
+      "output_path": "public/images/instructor-course/icon-5.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 928135ac782b0e5551c1deb89e7ba65a_020e85b6_3d73_443b_8915_9638ad11fee7.jpg, image 7; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 20:28. Source SHA-256: 4d4aac6e6073981af1ddde6c1102be08d52524dca50b47f52af65b6535f614be. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2028/07-928135ac782b0e5551c1deb89e7ba65a_020e85b6_3d73_443b_8915_9638ad11fee7.jpg.",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "bytes": 23396,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [
+        "Checkerboard background is baked into the supplied JPEG and intentionally preserved."
+      ],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "icon-6",
+      "source_crop": "../materials/revision-2026-09-10-2028/08-71129425acbb7fea7684710bb9112cfe_fa7b1ed0_ac41_4b5d_9076_8ee889f44d45.jpg",
+      "source_file": "71129425acbb7fea7684710bb9112cfe_fa7b1ed0_ac41_4b5d_9076_8ee889f44d45.jpg",
+      "source_number": 8,
+      "source_sha256": "1b0ee923d220d226678f6ba130c2eadb6378c9b48e5851d100c396a31110b176",
+      "source_dimensions": {
+        "width": 2048,
+        "height": 2048,
+        "orientation": 1
+      },
+      "output_path": "public/images/instructor-course/icon-6.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 71129425acbb7fea7684710bb9112cfe_fa7b1ed0_ac41_4b5d_9076_8ee889f44d45.jpg, image 8; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 20:28. Source SHA-256: 1b0ee923d220d226678f6ba130c2eadb6378c9b48e5851d100c396a31110b176. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2028/08-71129425acbb7fea7684710bb9112cfe_fa7b1ed0_ac41_4b5d_9076_8ee889f44d45.jpg.",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "bytes": 17162,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [
+        "Checkerboard background is baked into the supplied JPEG and intentionally preserved."
+      ],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "icon-7",
+      "source_crop": "../materials/revision-2026-09-10-2028/09-5c92812f5a14730d6bc62b1201cf39bf_813c2a6b_18db_499c_a7d7_fb9916cfee89.jpg",
+      "source_file": "5c92812f5a14730d6bc62b1201cf39bf_813c2a6b_18db_499c_a7d7_fb9916cfee89.jpg",
+      "source_number": 9,
+      "source_sha256": "9ee3c5e6e30ba2f6d61f8fc5f4b4e4c36dbdc1f563d29d0b02aed709a99df566",
+      "source_dimensions": {
+        "width": 2048,
+        "height": 2048,
+        "orientation": 1
+      },
+      "output_path": "public/images/instructor-course/icon-7.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 5c92812f5a14730d6bc62b1201cf39bf_813c2a6b_18db_499c_a7d7_fb9916cfee89.jpg, image 9; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 20:28. Source SHA-256: 9ee3c5e6e30ba2f6d61f8fc5f4b4e4c36dbdc1f563d29d0b02aed709a99df566. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2028/09-5c92812f5a14730d6bc62b1201cf39bf_813c2a6b_18db_499c_a7d7_fb9916cfee89.jpg.",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "bytes": 20930,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [
+        "Checkerboard background is baked into the supplied JPEG and intentionally preserved."
+      ],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-10",
+      "source_crop": "../materials/revision-2026-09-10-2028/10-3M4A3721.JPG",
+      "source_file": "3M4A3721.JPG",
+      "source_number": 10,
+      "source_sha256": "f18d454e39a47906d24ed504c94856bda98287fbd8e7b8d1e1e3da5f487e0164",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/instructor-course/photo-10.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 3M4A3721.JPG, image 10; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 20:28. Source SHA-256: f18d454e39a47906d24ed504c94856bda98287fbd8e7b8d1e1e3da5f487e0164. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2028/10-3M4A3721.JPG.",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      },
+      "bytes": 132214,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-10-small",
+      "source_crop": "../materials/revision-2026-09-10-2028/10-3M4A3721.JPG",
+      "source_file": "3M4A3721.JPG",
+      "source_number": 10,
+      "source_sha256": "f18d454e39a47906d24ed504c94856bda98287fbd8e7b8d1e1e3da5f487e0164",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/instructor-course/photo-10-small.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 3M4A3721.JPG, image 10; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 20:28. Source SHA-256: f18d454e39a47906d24ed504c94856bda98287fbd8e7b8d1e1e3da5f487e0164. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2028/10-3M4A3721.JPG.",
+      "dimensions": {
+        "width": 640,
+        "height": 427
+      },
+      "bytes": 24880,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-11",
+      "source_crop": "../materials/revision-2026-09-10-2028/11-3M4A4878.JPG",
+      "source_file": "3M4A4878.JPG",
+      "source_number": 11,
+      "source_sha256": "b7f8766daf9fdf8352b510a42ddc1ff7e58717a99f2b7f4407fda8d093d1ebef",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/instructor-course/photo-11.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 3M4A4878.JPG, image 11; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 20:28. Source SHA-256: b7f8766daf9fdf8352b510a42ddc1ff7e58717a99f2b7f4407fda8d093d1ebef. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2028/11-3M4A4878.JPG.",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      },
+      "bytes": 111690,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-11-small",
+      "source_crop": "../materials/revision-2026-09-10-2028/11-3M4A4878.JPG",
+      "source_file": "3M4A4878.JPG",
+      "source_number": 11,
+      "source_sha256": "b7f8766daf9fdf8352b510a42ddc1ff7e58717a99f2b7f4407fda8d093d1ebef",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/instructor-course/photo-11-small.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 3M4A4878.JPG, image 11; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 20:28. Source SHA-256: b7f8766daf9fdf8352b510a42ddc1ff7e58717a99f2b7f4407fda8d093d1ebef. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2028/11-3M4A4878.JPG.",
+      "dimensions": {
+        "width": 640,
+        "height": 427
+      },
+      "bytes": 28230,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-12",
+      "source_crop": "../materials/revision-2026-09-10-2028/12-3M4A5297.JPG",
+      "source_file": "3M4A5297.JPG",
+      "source_number": 12,
+      "source_sha256": "ee8ae22d214e00f2d9b054a259e51dc860c0f5f32e76d2dce3903915b419d021",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/instructor-course/photo-12.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 3M4A5297.JPG, image 12; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 20:28. Source SHA-256: ee8ae22d214e00f2d9b054a259e51dc860c0f5f32e76d2dce3903915b419d021. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2028/12-3M4A5297.JPG.",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      },
+      "bytes": 154154,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-12-small",
+      "source_crop": "../materials/revision-2026-09-10-2028/12-3M4A5297.JPG",
+      "source_file": "3M4A5297.JPG",
+      "source_number": 12,
+      "source_sha256": "ee8ae22d214e00f2d9b054a259e51dc860c0f5f32e76d2dce3903915b419d021",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/instructor-course/photo-12-small.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 3M4A5297.JPG, image 12; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 20:28. Source SHA-256: ee8ae22d214e00f2d9b054a259e51dc860c0f5f32e76d2dce3903915b419d021. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2028/12-3M4A5297.JPG.",
+      "dimensions": {
+        "width": 640,
+        "height": 427
+      },
+      "bytes": 22120,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-13",
+      "source_crop": "../materials/revision-2026-09-10-2028/13-3M4A5417.JPG",
+      "source_file": "3M4A5417.JPG",
+      "source_number": 13,
+      "source_sha256": "1355193a7eb048020c7ad5524010ed54e4829e10f1eb2cd7f86e12e67051e39d",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/instructor-course/photo-13.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 3M4A5417.JPG, image 13; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 20:28. Source SHA-256: 1355193a7eb048020c7ad5524010ed54e4829e10f1eb2cd7f86e12e67051e39d. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2028/13-3M4A5417.JPG.",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      },
+      "bytes": 99092,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-13-small",
+      "source_crop": "../materials/revision-2026-09-10-2028/13-3M4A5417.JPG",
+      "source_file": "3M4A5417.JPG",
+      "source_number": 13,
+      "source_sha256": "1355193a7eb048020c7ad5524010ed54e4829e10f1eb2cd7f86e12e67051e39d",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/instructor-course/photo-13-small.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 3M4A5417.JPG, image 13; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 20:28. Source SHA-256: 1355193a7eb048020c7ad5524010ed54e4829e10f1eb2cd7f86e12e67051e39d. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2028/13-3M4A5417.JPG.",
+      "dimensions": {
+        "width": 640,
+        "height": 427
+      },
+      "bytes": 24570,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-14",
+      "source_crop": "../materials/revision-2026-09-10-2028/14-3M4A5425.JPG",
+      "source_file": "3M4A5425.JPG",
+      "source_number": 14,
+      "source_sha256": "b0cac0573a1d1e2c935d56d231a315c983070e784442faa7191fdb52e3facd2d",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/instructor-course/photo-14.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 3M4A5425.JPG, image 14; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 20:28. Source SHA-256: b0cac0573a1d1e2c935d56d231a315c983070e784442faa7191fdb52e3facd2d. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2028/14-3M4A5425.JPG.",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      },
+      "bytes": 183964,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-14-small",
+      "source_crop": "../materials/revision-2026-09-10-2028/14-3M4A5425.JPG",
+      "source_file": "3M4A5425.JPG",
+      "source_number": 14,
+      "source_sha256": "b0cac0573a1d1e2c935d56d231a315c983070e784442faa7191fdb52e3facd2d",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/instructor-course/photo-14-small.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 3M4A5425.JPG, image 14; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 20:28. Source SHA-256: b0cac0573a1d1e2c935d56d231a315c983070e784442faa7191fdb52e3facd2d. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2028/14-3M4A5425.JPG.",
+      "dimensions": {
+        "width": 640,
+        "height": 427
+      },
+      "bytes": 38392,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-15",
+      "source_crop": "../materials/revision-2026-09-10-2028/15-3M4A5720.JPG",
+      "source_file": "3M4A5720.JPG",
+      "source_number": 15,
+      "source_sha256": "e8d429488d9d097afb6c495421d32e9cde7bd2e2d810183503844a8e4778a462",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/instructor-course/photo-15.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 3M4A5720.JPG, image 15; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 20:28. Source SHA-256: e8d429488d9d097afb6c495421d32e9cde7bd2e2d810183503844a8e4778a462. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2028/15-3M4A5720.JPG.",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      },
+      "bytes": 89114,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-15-small",
+      "source_crop": "../materials/revision-2026-09-10-2028/15-3M4A5720.JPG",
+      "source_file": "3M4A5720.JPG",
+      "source_number": 15,
+      "source_sha256": "e8d429488d9d097afb6c495421d32e9cde7bd2e2d810183503844a8e4778a462",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/instructor-course/photo-15-small.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 3M4A5720.JPG, image 15; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 20:28. Source SHA-256: e8d429488d9d097afb6c495421d32e9cde7bd2e2d810183503844a8e4778a462. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2028/15-3M4A5720.JPG.",
+      "dimensions": {
+        "width": 640,
+        "height": 427
+      },
+      "bytes": 23550,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-16",
+      "source_crop": "../materials/revision-2026-09-10-2028/16-3M4A5723.JPG",
+      "source_file": "3M4A5723.JPG",
+      "source_number": 16,
+      "source_sha256": "b53d9d0feffa19b11ea69c071d348406396831136d00ab4dc151b348e32aa708",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/instructor-course/photo-16.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 3M4A5723.JPG, image 16; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 20:28. Source SHA-256: b53d9d0feffa19b11ea69c071d348406396831136d00ab4dc151b348e32aa708. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2028/16-3M4A5723.JPG.",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      },
+      "bytes": 108662,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-16-small",
+      "source_crop": "../materials/revision-2026-09-10-2028/16-3M4A5723.JPG",
+      "source_file": "3M4A5723.JPG",
+      "source_number": 16,
+      "source_sha256": "b53d9d0feffa19b11ea69c071d348406396831136d00ab4dc151b348e32aa708",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/instructor-course/photo-16-small.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 3M4A5723.JPG, image 16; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 20:28. Source SHA-256: b53d9d0feffa19b11ea69c071d348406396831136d00ab4dc151b348e32aa708. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2028/16-3M4A5723.JPG.",
+      "dimensions": {
+        "width": 640,
+        "height": 427
+      },
+      "bytes": 26278,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-17",
+      "source_crop": "../materials/revision-2026-09-10-2028/17-3M4A5727.JPG",
+      "source_file": "3M4A5727.JPG",
+      "source_number": 17,
+      "source_sha256": "592a17df69c2381de9a21bfe135b567fe0395136de036c8ef0c53ae4b6950b28",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/instructor-course/photo-17.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 3M4A5727.JPG, image 17; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 20:28. Source SHA-256: 592a17df69c2381de9a21bfe135b567fe0395136de036c8ef0c53ae4b6950b28. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2028/17-3M4A5727.JPG.",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      },
+      "bytes": 111566,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-17-small",
+      "source_crop": "../materials/revision-2026-09-10-2028/17-3M4A5727.JPG",
+      "source_file": "3M4A5727.JPG",
+      "source_number": 17,
+      "source_sha256": "592a17df69c2381de9a21bfe135b567fe0395136de036c8ef0c53ae4b6950b28",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/instructor-course/photo-17-small.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 3M4A5727.JPG, image 17; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 20:28. Source SHA-256: 592a17df69c2381de9a21bfe135b567fe0395136de036c8ef0c53ae4b6950b28. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2028/17-3M4A5727.JPG.",
+      "dimensions": {
+        "width": 640,
+        "height": 427
+      },
+      "bytes": 26486,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-18",
+      "source_crop": "../materials/revision-2026-09-10-2028/18-3M4A6419.JPG",
+      "source_file": "3M4A6419.JPG",
+      "source_number": 18,
+      "source_sha256": "3d3f6af0d0f6efe72d4420491a1740fab9db37749b71b378b1ca41f660f64435",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/instructor-course/photo-18.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 3M4A6419.JPG, image 18; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 20:28. Source SHA-256: 3d3f6af0d0f6efe72d4420491a1740fab9db37749b71b378b1ca41f660f64435. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2028/18-3M4A6419.JPG.",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      },
+      "bytes": 166628,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-18-small",
+      "source_crop": "../materials/revision-2026-09-10-2028/18-3M4A6419.JPG",
+      "source_file": "3M4A6419.JPG",
+      "source_number": 18,
+      "source_sha256": "3d3f6af0d0f6efe72d4420491a1740fab9db37749b71b378b1ca41f660f64435",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/instructor-course/photo-18-small.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 3M4A6419.JPG, image 18; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 20:28. Source SHA-256: 3d3f6af0d0f6efe72d4420491a1740fab9db37749b71b378b1ca41f660f64435. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2028/18-3M4A6419.JPG.",
+      "dimensions": {
+        "width": 640,
+        "height": 427
+      },
+      "bytes": 36182,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-19",
+      "source_crop": "../materials/revision-2026-09-10-2028/19-3M4A6598.JPG",
+      "source_file": "3M4A6598.JPG",
+      "source_number": 19,
+      "source_sha256": "8b8bc4f2131f6312452c0cf49c1398b8c13208cb1fad473ab855a9b4660841d6",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/instructor-course/photo-19.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 3M4A6598.JPG, image 19; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 20:28. Source SHA-256: 8b8bc4f2131f6312452c0cf49c1398b8c13208cb1fad473ab855a9b4660841d6. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2028/19-3M4A6598.JPG.",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      },
+      "bytes": 119866,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-19-small",
+      "source_crop": "../materials/revision-2026-09-10-2028/19-3M4A6598.JPG",
+      "source_file": "3M4A6598.JPG",
+      "source_number": 19,
+      "source_sha256": "8b8bc4f2131f6312452c0cf49c1398b8c13208cb1fad473ab855a9b4660841d6",
+      "source_dimensions": {
+        "width": 6000,
+        "height": 4000,
+        "orientation": 1
+      },
+      "output_path": "public/images/instructor-course/photo-19-small.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 3M4A6598.JPG, image 19; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 20:28. Source SHA-256: 8b8bc4f2131f6312452c0cf49c1398b8c13208cb1fad473ab855a9b4660841d6. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2028/19-3M4A6598.JPG.",
+      "dimensions": {
+        "width": 640,
+        "height": 427
+      },
+      "bytes": 31676,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-20",
+      "source_crop": "../materials/revision-2026-09-10-2028/20-13.jpg",
+      "source_file": "13.jpg",
+      "source_number": 20,
+      "source_sha256": "02cab3a9a446c3bd8b298705dd20d593752e07c734ca6f507b84339777ebb225",
+      "source_dimensions": {
+        "width": 5701,
+        "height": 3640,
+        "orientation": 1
+      },
+      "output_path": "public/images/instructor-course/photo-20.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 13.jpg, image 20; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 20:28. Source SHA-256: 02cab3a9a446c3bd8b298705dd20d593752e07c734ca6f507b84339777ebb225. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2028/20-13.jpg.",
+      "dimensions": {
+        "width": 1600,
+        "height": 1022
+      },
+      "bytes": 220100,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "photo-20-small",
+      "source_crop": "../materials/revision-2026-09-10-2028/20-13.jpg",
+      "source_file": "13.jpg",
+      "source_number": 20,
+      "source_sha256": "02cab3a9a446c3bd8b298705dd20d593752e07c734ca6f507b84339777ebb225",
+      "source_dimensions": {
+        "width": 5701,
+        "height": 3640,
+        "orientation": 1
+      },
+      "output_path": "public/images/instructor-course/photo-20-small.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file 13.jpg, image 20; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 20:28. Source SHA-256: 02cab3a9a446c3bd8b298705dd20d593752e07c734ca6f507b84339777ebb225. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2028/20-13.jpg.",
+      "dimensions": {
+        "width": 640,
+        "height": 409
+      },
+      "bytes": 43488,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    },
+    {
+      "id": "document-1",
+      "source_crop": "../materials/revision-2026-09-10-2028/21-photo_2025-06-16_13-12-50.jpg",
+      "source_file": "photo_2025-06-16_13-12-50.jpg",
+      "source_number": 21,
+      "source_sha256": "9ab71c114a3c7d025a27571292ff236cb581391d58134f93c59033982d2b86df",
+      "source_dimensions": {
+        "width": 1280,
+        "height": 904,
+        "orientation": 1
+      },
+      "output_path": "public/images/instructor-course/document-1.webp",
+      "strategy": "EXIF auto-orientation, proportional downsize without enlargement, WebP encoding",
+      "provenance": "Source: client file photo_2025-06-16_13-12-50.jpg, image 21; Telegram ОКТАГОН. НОВЫЙ САЙТ!, Харламов Алексей, 2026-09-10 20:28. Source SHA-256: 9ab71c114a3c7d025a27571292ff236cb581391d58134f93c59033982d2b86df. EXIF orientation correction and proportional WebP conversion only; no cropping or content editing. Original preserved at ../materials/revision-2026-09-10-2028/21-photo_2025-06-16_13-12-50.jpg.",
+      "dimensions": {
+        "width": 1280,
+        "height": 904
+      },
+      "bytes": 271236,
+      "format": "webp",
+      "transparency": false,
+      "deviations": [],
+      "source_notes": [],
+      "qa_status": "accepted"
+    }
+  ],
+  "semantic": [
+    {
+      "id": "reference-1",
+      "source_crop": "../materials/revision-2026-09-10-2028/01-Снимок экрана 2026-09-10 200447.jpg",
+      "implementation": "Use existing optimal-course Astro page structure and semantic title, description, programme and audience text. Do not render the reference screenshot as page content.",
+      "notes": "Client-supplied layout and content reference; original preserved.",
+      "qa_status": "needs_parent_review"
+    },
+    {
+      "id": "reference-2",
+      "source_crop": "../materials/revision-2026-09-10-2028/02-Снимок экрана 2026-09-10 200932.jpg",
+      "implementation": "Build the supplied fact values and programme using the existing optimal-course HTML components. CSS owns responsive layout, spacing and typography; supplied icons compose beside semantic text.",
+      "notes": "Client-supplied content reference; original preserved.",
+      "qa_status": "needs_parent_review"
+    }
+  ],
+  "execution_order": [
+    "Preserve and hash all 21 client originals",
+    "Convert icons 3–9",
+    "Convert photos 10–20 with 640px variants",
+    "Convert document 21",
+    "Inspect labeled complete-frame contact sheets"
+  ],
+  "blockers": [
+    "Only one course document is present (item 21). Two additional documents referenced by the caption are missing; no replacements were selected."
+  ],
+  "assumptions": [
+    "Direct client assets only; no generation, retouching or cropping.",
+    "Photos are limited by width; document is limited to 1600px on either axis; never enlarge.",
+    "Original order 3–9 maps to icon-1–icon-7; photos keep packet numbering 10–20; item 21 maps to document-1.",
+    "CSS owns framing, captions and responsive display. Baked checkerboard backgrounds in supplied JPEG icons are preserved."
+  ]
+}
