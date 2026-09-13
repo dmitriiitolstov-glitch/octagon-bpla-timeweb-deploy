@@ -21,6 +21,9 @@
   const heroDots = [...document.querySelectorAll('[data-hero-dot]')];
   const heroCurrent = document.querySelector('[data-hero-current]');
   const scrollDock = document.querySelector('[data-scroll-dock]');
+  const scrollDockSlot = document.querySelector('[data-scroll-dock-slot]');
+  const footerBottom = document.querySelector('.n-footer-bottom');
+  const floatingContacts = document.querySelector('[data-contact-dock]');
   const utilityDisclosures = [...document.querySelectorAll('[data-utility-disclosure]')];
   const accessibilityToggles = [...document.querySelectorAll('[data-accessibility-toggle]')];
   const accessibilityStorageKey = 'octagon-accessibility-mode';
@@ -265,12 +268,20 @@
     if (!scrollDock) return;
     const hero = document.querySelector('.n-home-hero');
     const threshold = hero ? Math.max(260, hero.getBoundingClientRect().height * .62) : 220;
-    const visible = window.scrollY > threshold;
+    const parked = !!scrollDockSlot && scrollDockSlot.getBoundingClientRect().bottom <= window.innerHeight - 22;
+    const visible = parked || window.scrollY > threshold;
+    scrollDock.classList.toggle('is-parked', parked);
+    // Keep the independent contact control clear of the footer's legal row.
+    if (floatingContacts && footerBottom) {
+      const footerOffset = Math.max(22, window.innerHeight - footerBottom.getBoundingClientRect().top + 16);
+      floatingContacts.style.bottom = window.innerWidth > 640 ? `${footerOffset}px` : '';
+    }
     scrollDock.classList.toggle('is-visible', visible);
     scrollDock.setAttribute('aria-hidden', String(!visible));
   };
   updateChrome();
   window.addEventListener('scroll', updateChrome, { passive: true });
+  window.addEventListener('resize', updateChrome, { passive: true });
 
   const revealItems = [...document.querySelectorAll('[data-reveal]')];
   if ('IntersectionObserver' in window && revealItems.length) {
