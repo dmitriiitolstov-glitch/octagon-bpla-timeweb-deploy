@@ -581,15 +581,4 @@
     document.fonts?.ready.then(layoutTrainingSnap);
   }
 
-  document.querySelectorAll('[data-demo-form]').forEach((form) => {
-    form.addEventListener('submit', (event) => {
-      event.preventDefault();
-      if (!form.reportValidity()) return;
-      const button = form.querySelector('button[type="submit"]');
-      const note = form.querySelector('[data-form-note]');
-      if (button) button.textContent = 'Заявка принята';
-      if (note) note.textContent = 'Демонстрация: после интеграции данные будут передаваться менеджеру.';
-      form.reset();
-    });
-  });
 })();
