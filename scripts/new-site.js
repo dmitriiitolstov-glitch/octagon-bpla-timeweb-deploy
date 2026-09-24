@@ -18,7 +18,6 @@
   const heroSlides = [...document.querySelectorAll('[data-hero-slide]')];
   const heroPrev = document.querySelector('[data-hero-prev]');
   const heroNext = document.querySelector('[data-hero-next]');
-  const heroDots = [...document.querySelectorAll('[data-hero-dot]')];
   const heroCurrent = document.querySelector('[data-hero-current]');
   const scrollDock = document.querySelector('[data-scroll-dock]');
   const scrollDockSlot = document.querySelector('[data-scroll-dock-slot]');
@@ -355,36 +354,20 @@
   if (heroSlider && heroSlides.length) {
     let activeHeroIndex = Math.max(0, heroSlides.findIndex((slide) => slide.classList.contains('is-active')));
 
-    const showHero = (index, focusDot = false) => {
+    const showHero = (index) => {
       const nextIndex = (index + heroSlides.length) % heroSlides.length;
       heroSlides.forEach((slide, slideIndex) => {
         const active = slideIndex === nextIndex;
         slide.classList.toggle('is-active', active);
         slide.setAttribute('aria-hidden', String(!active));
       });
-      heroDots.forEach((dot, dotIndex) => {
-        const active = dotIndex === nextIndex;
-        dot.setAttribute('aria-selected', String(active));
-        dot.tabIndex = active ? 0 : -1;
-      });
       if (heroCurrent) heroCurrent.textContent = String(nextIndex + 1).padStart(2, '0');
       activeHeroIndex = nextIndex;
       decodeHeading(heroSlides[nextIndex]?.querySelector('[data-decode-title]'));
-      if (focusDot) heroDots[nextIndex]?.focus();
     };
 
     heroPrev?.addEventListener('click', () => showHero(activeHeroIndex - 1));
     heroNext?.addEventListener('click', () => showHero(activeHeroIndex + 1));
-    heroDots.forEach((dot, index) => {
-      dot.addEventListener('click', () => showHero(index));
-      dot.addEventListener('keydown', (event) => {
-        if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
-        event.preventDefault();
-        if (event.key === 'Home') showHero(0, true);
-        else if (event.key === 'End') showHero(heroSlides.length - 1, true);
-        else showHero(index + (event.key === 'ArrowRight' ? 1 : -1), true);
-      });
-    });
     showHero(activeHeroIndex);
   }
 
