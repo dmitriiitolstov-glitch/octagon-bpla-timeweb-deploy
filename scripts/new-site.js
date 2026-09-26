@@ -21,7 +21,6 @@
   const heroCurrent = document.querySelector('[data-hero-current]');
   const scrollDock = document.querySelector('[data-scroll-dock]');
   const scrollDockSlot = document.querySelector('[data-scroll-dock-slot]');
-  const footerBottom = document.querySelector('.n-footer-bottom');
   const floatingContacts = document.querySelector('[data-contact-dock]');
   const utilityDisclosures = [...document.querySelectorAll('[data-utility-disclosure]')];
   const accessibilityToggles = [...document.querySelectorAll('[data-accessibility-toggle]')];
@@ -137,7 +136,9 @@
 
   const setContactOpen = (open) => {
     contactTrigger?.setAttribute('aria-expanded', String(open));
+    contactTrigger?.setAttribute('aria-label', open ? 'Закрыть способы связи' : 'Открыть способы связи');
     contactMenu?.setAttribute('aria-hidden', String(!open));
+    contactMenu?.toggleAttribute('inert', !open);
   };
 
   const openMega = (trigger) => {
@@ -214,7 +215,11 @@
   contactTrigger?.addEventListener('click', () => {
     const willOpen = contactTrigger.getAttribute('aria-expanded') !== 'true';
     setContactOpen(willOpen);
+    if (willOpen) requestAnimationFrame(() => {
+      if (contactTrigger.getAttribute('aria-expanded') === 'true') contactMenu?.querySelector('a')?.focus({ preventScroll: true });
+    });
   });
+  contactMenu?.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => setContactOpen(false)));
 
   document.addEventListener('click', (event) => {
     const target = event.target;
@@ -230,6 +235,7 @@
 
   document.addEventListener('keydown', (event) => {
     const menuWasOpen = mobileTrigger?.getAttribute('aria-expanded') === 'true';
+    const contactWasOpen = contactTrigger?.getAttribute('aria-expanded') === 'true';
     if (event.key === 'Tab' && menuWasOpen) {
       const focusable = getMenuFocusable();
       const first = focusable[0];
@@ -260,6 +266,7 @@
     setMenuOpen(false);
     setContactOpen(false);
     if (menuWasOpen) mobileTrigger?.focus();
+    else if (contactWasOpen) contactTrigger?.focus();
   });
 
   const updateChrome = () => {
@@ -270,10 +277,14 @@
     const parked = !!scrollDockSlot && scrollDockSlot.getBoundingClientRect().bottom <= window.innerHeight - 22;
     const visible = parked || window.scrollY > threshold;
     scrollDock.classList.toggle('is-parked', parked);
-    // Keep the independent contact control clear of the footer's legal row.
-    if (floatingContacts && footerBottom) {
-      const footerOffset = Math.max(22, window.innerHeight - footerBottom.getBoundingClientRect().top + 16);
-      floatingContacts.style.bottom = window.innerWidth > 640 ? `${footerOffset}px` : '';
+    // Both controls share the same bottom edge when the dock parks across the full footer.
+    if (floatingContacts && scrollDockSlot) {
+      const baseOffset = window.innerWidth > 900 ? 22 : 14;
+      const slot = scrollDockSlot.getBoundingClientRect();
+      const dockHeight = scrollDock.getBoundingClientRect().height;
+      const footerOffset = parked ? Math.max(baseOffset, window.innerHeight - slot.bottom + (slot.height - dockHeight) / 2) : baseOffset;
+      floatingContacts.style.bottom = `${footerOffset}px`;
+      floatingContacts.style.setProperty('--contact-bottom', `${footerOffset}px`);
     }
     scrollDock.classList.toggle('is-visible', visible);
     scrollDock.setAttribute('aria-hidden', String(!visible));
