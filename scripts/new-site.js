@@ -137,8 +137,12 @@
   const setContactOpen = (open) => {
     contactTrigger?.setAttribute('aria-expanded', String(open));
     contactTrigger?.setAttribute('aria-label', open ? 'Закрыть способы связи' : 'Открыть способы связи');
+    contactTrigger?.setAttribute('title', open ? 'Закрыть способы связи' : 'Открыть способы связи');
+    const contactLabel = contactTrigger?.querySelector('.n-contact-trigger-label');
+    if (contactLabel) contactLabel.textContent = open ? 'Закрыть' : 'Связаться';
     contactMenu?.setAttribute('aria-hidden', String(!open));
     contactMenu?.toggleAttribute('inert', !open);
+    requestAnimationFrame(updateChrome);
   };
 
   const openMega = (trigger) => {
@@ -282,7 +286,9 @@
       const baseOffset = window.innerWidth > 900 ? 22 : 14;
       const slot = scrollDockSlot.getBoundingClientRect();
       const dockHeight = scrollDock.getBoundingClientRect().height;
-      const footerOffset = parked ? Math.max(baseOffset, window.innerHeight - slot.bottom + (slot.height - dockHeight) / 2) : baseOffset;
+      // Opening near the footer must not squeeze the options behind the fixed header.
+      const contactOpen = contactTrigger?.getAttribute('aria-expanded') === 'true';
+      const footerOffset = parked && !contactOpen ? Math.max(baseOffset, window.innerHeight - slot.bottom + (slot.height - dockHeight) / 2) : baseOffset;
       floatingContacts.style.bottom = `${footerOffset}px`;
       floatingContacts.style.setProperty('--contact-bottom', `${footerOffset}px`);
     }
