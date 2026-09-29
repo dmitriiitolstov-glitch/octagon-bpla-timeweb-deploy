@@ -1,0 +1,136 @@
+
+/* September 29: components/new-site/CatalogHeading.astro */
+
+  :root:root:root:root .n-catalog-heading { padding:40px var(--pad) 46px; }
+  :root:root:root:root .n-catalog-heading .n-catalog-format { color:var(--lime); font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:.08em; margin:0 0 18px; }
+  :root:root:root:root .n-catalog-heading h1 { font-size:clamp(38px,6vw,80px); line-height:1.05; letter-spacing:-.03em; text-transform:uppercase; margin:0 0 24px; overflow-wrap:anywhere; }
+  :root:root:root:root .n-catalog-heading>p:last-child { max-width:62ch; color:rgba(255,255,255,.75); margin:0; }
+  @media (max-width:600px) { :root:root:root:root .n-catalog-heading { padding-top:28px; padding-bottom:32px; } :root:root:root:root .n-catalog-heading h1 { font-size:clamp(30px,8vw,38px); } }
+
+
+/* September 29: components/new-site/TrainingBreadcrumbs.astro */
+
+  :root:root:root:root .n-training-breadcrumbs { padding: 22px var(--pad); border-bottom: 1px solid var(--line-dark); font-size: 13px; }
+  :root:root:root:root .n-training-breadcrumbs ol { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 0; margin: 0; padding: 0; list-style: none; }
+  :root:root:root:root .n-training-breadcrumbs li { display: flex; align-items: baseline; min-width: 0; max-width: 100%; }
+  :root:root:root:root .n-training-breadcrumbs li + li::before { content: '/'; flex: 0 0 auto; padding: 0 12px; color: rgba(255,255,255,.5); }
+  :root:root:root:root .n-training-breadcrumbs a { color: rgba(255,255,255,.72); text-decoration: underline; text-underline-offset: 4px; }
+  :root:root:root:root .n-training-breadcrumbs a:hover, :root:root:root:root .n-training-breadcrumbs a:focus-visible { color: var(--lime); }
+  :root:root:root:root .n-training-breadcrumbs span { color: #fff; }
+  :root:root:root:root .n-training-breadcrumbs a, :root:root:root:root .n-training-breadcrumbs span { overflow-wrap: anywhere; }
+  @media (max-width: 600px) {
+    :root:root:root:root .n-training-breadcrumbs { padding-block: 16px; font-size: 12px; }
+    :root:root:root:root .n-training-breadcrumbs li + li::before { padding-inline: 8px; }
+  }
+
+
+/* September 29: components/new-site/CatalogFrame.astro */
+
+  :root:root:root:root .n-catalog-frame { display:grid; grid-template-columns:224px minmax(0,1fr); gap:40px; padding:0 var(--pad) 64px; align-items:start; }
+  :root:root:root:root .n-catalog-sidebar { min-width:0; border-top:1px solid var(--line-dark); }
+  :root:root:root:root .n-catalog-sidebar-title { display:block; padding:20px 0; font-size:20px; font-weight:500; }
+  :root:root:root:root .n-catalog-sidebar-group { padding:16px 0; border-top:1px solid var(--line-dark); }
+  :root:root:root:root .n-catalog-sidebar-group p { margin:0 0 8px; color:var(--lime); font-size:12px; font-weight:600; }
+  :root:root:root:root .n-catalog-sidebar ul { list-style:none; padding:0; margin:0; }
+  :root:root:root:root .n-catalog-sidebar li a { display:flex; align-items:center; min-height:44px; padding:10px 12px; color:#ccd4cf; font-size:14px; line-height:1.45; overflow-wrap:anywhere; }
+  :root:root:root:root .n-catalog-sidebar a[aria-current="page"] { color:var(--lime); }
+  :root:root:root:root .n-catalog-sidebar li a[aria-current="page"] { background:#152218; }
+  :root:root:root:root .n-catalog-sidebar a:hover { color:#fff; text-decoration:underline; text-underline-offset:4px; }
+  :root:root:root:root .n-catalog-content { min-width:0; }
+  :root:root:root:root .n-catalog-content .n-course-section { padding:0; }
+  :root:root:root:root .n-catalog-content .n-course-grid, :root:root:root:root .n-catalog-content .n-direction-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr)); gap:24px; background:none; border:0; }
+  :root:root:root:root .n-catalog-content .n-course-card, :root:root:root:root .n-catalog-content .n-direction-card { display:flex; flex-direction:column; min-width:0; max-width:360px; border:1px solid var(--line-dark); background:var(--ink-soft); }
+  :root:root:root:root .n-catalog-content .n-course-card-media, :root:root:root:root .n-catalog-content .n-direction-card-media { aspect-ratio:1792/2400; min-height:0; background:var(--ink-soft); }
+  :root:root:root:root .n-catalog-content .n-course-card-media img, :root:root:root:root .n-catalog-content .n-direction-card-media img { width:100%; height:100%; object-fit:contain; filter:none; }
+  :root:root:root:root .n-catalog-content .n-course-card:hover img, :root:root:root:root .n-catalog-content .n-direction-card:hover img { transform:none; }
+  :root:root:root:root .n-catalog-content .n-course-card-copy, :root:root:root:root .n-catalog-content .n-direction-card-copy { flex:1; display:flex; flex-direction:column; min-height:0; padding:24px 20px; }
+  :root:root:root:root .n-catalog-content .n-course-card-copy>span, :root:root:root:root .n-catalog-content .n-direction-card-copy>span { color:var(--lime); font-size:10px; margin-bottom:12px; }
+  :root:root:root:root .n-catalog-content .n-course-card h2, :root:root:root:root .n-catalog-content .n-direction-card h2 { margin:0 0 16px; font-size:22px; line-height:1.2; letter-spacing:-.02em; text-transform:none; overflow-wrap:anywhere; hyphens:auto; }
+  :root:root:root:root .n-catalog-content .n-course-card p, :root:root:root:root .n-catalog-content .n-direction-card p { margin:0 0 24px; color:#c7d0ca; font-size:14px; line-height:1.6; }
+  :root:root:root:root .n-catalog-content .n-course-card b, :root:root:root:root .n-catalog-content .n-direction-card b { margin-top:auto; align-self:flex-start; font-size:11px; line-height:1.5; }
+  @media(max-width:900px) { :root:root:root:root .n-catalog-frame { grid-template-columns:184px minmax(0,1fr); gap:24px; } }
+  @media(max-width:700px) {
+    :root:root:root:root .n-catalog-frame { grid-template-columns:minmax(0,1fr); gap:28px; padding-bottom:48px; }
+    :root:root:root:root .n-catalog-sidebar-title { padding-block:16px; }
+    :root:root:root:root .n-catalog-sidebar-group { padding-block:12px; }
+    :root:root:root:root .n-catalog-sidebar ul { display:flex; flex-wrap:wrap; gap:4px 8px; }
+    :root:root:root:root .n-catalog-sidebar li { min-width:0; }
+    :root:root:root:root .n-catalog-sidebar li a { padding:10px; }
+    :root:root:root:root .n-catalog-content .n-course-card, :root:root:root:root .n-catalog-content .n-direction-card { max-width:none; }
+  }
+
+
+/* September 29: components/new-site/ContactDock.astro */
+
+  :root:root:root:root .n-contact-dock { right:max(var(--pad),env(safe-area-inset-right)); }
+  :root:root:root:root .n-contact-trigger-raster { display:block; position:relative; flex:none; width:64px; height:68px; overflow:hidden; clip-path:polygon(0 31%,28%6%,43%6%,43%0,57%0,57%6%,72%6%,100%31%,100%72%,72%100%,28%100%,0 72%); }
+  :root:root:root:root .n-contact-trigger-raster img { position:absolute; width:100px; height:100px; max-width:none; left:-18px; top:-13px; }
+  :root:root:root:root .n-contact-dock .n-contact-trigger-art { display:none; }
+  :root:root:root:root .n-oct-contact-trigger[aria-expanded="true"] .n-contact-trigger-raster { display:none; }
+  :root:root:root:root .n-contact-dock .n-oct-contact-trigger[aria-expanded="true"] .n-contact-trigger-art { display:block; }
+  :root:root:root:root .n-contact-dock .n-contact-menu { display:grid; grid-template-columns:var(--octagon-icon-size); justify-content:center; width:80px; max-width:calc(100vw - 28px); max-height:calc(100dvh - var(--contact-bottom,22px) - 112px); overflow-y:auto; overscroll-behavior:contain; padding:8px; gap:16px; background:transparent; border:0; box-shadow:none; bottom:100px; scrollbar-width:thin; }
+  :root:root:root:root .n-contact-menu .n-oct-contact-option { display:block; width:var(--octagon-icon-size); height:var(--octagon-icon-size); min-height:44px; padding:0; border:0; color:#fff; text-decoration:none; }
+  :root:root:root:root .n-contact-dock>button.n-oct-contact-trigger { position:relative; display:flex; flex-direction:column; width:64px; height:68px; min-width:0; padding:0; background:none; border:0; box-shadow:none; color:var(--paper); }
+  :root:root:root:root .n-contact-dock>button.n-oct-contact-trigger .n-contact-trigger-label { display:block; padding:1px 4px; background:var(--ink); color:var(--paper); font-size:10px; font-weight:500; line-height:16px; letter-spacing:.03em; text-shadow:none; }
+  :root:root:root:root .n-contact-trigger-art { display:block; flex:none; width:var(--octagon-icon-size); height:var(--octagon-icon-size); overflow:visible; }
+  :root:root:root:root .n-contact-trigger-frame { fill:var(--ink); stroke:rgba(242,242,235,.8); stroke-width:1.25; transition:stroke .2s ease; }
+  :root:root:root:root .n-contact-trigger-highlight { opacity:0; transition:opacity .2s ease; }
+  :root:root:root:root .n-contact-close-icon { display:none; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; }
+  :root:root:root:root .n-oct-contact-trigger[aria-expanded="true"] .n-contact-symbol { display:none; }
+  :root:root:root:root .n-oct-contact-trigger[aria-expanded="true"] .n-contact-close-icon { display:block; }
+  :root:root:root:root .n-oct-contact-option:focus-visible { outline:2px solid var(--lime); outline-offset:4px; }
+  :root:root:root:root .n-contact-dock>button.n-oct-contact-trigger:focus-visible { outline:2px solid var(--lime); outline-offset:6px; }
+  :root:root:root:root .n-oct-contact-trigger:focus-visible .n-contact-trigger-frame { stroke:var(--lime); stroke-width:3; }
+  :root:root:root:root .n-oct-contact-trigger:focus-visible .n-contact-trigger-label { color:var(--lime); text-decoration:underline; text-underline-offset:3px; }
+  :root:root:root:root .n-oct-contact-trigger:is(:focus-visible,:active,[aria-expanded="true"]) .n-contact-trigger-highlight { opacity:1; }
+  @media(hover:hover) { :root:root:root:root .n-oct-contact-trigger:hover .n-contact-trigger-frame { stroke:var(--lime); }:root:root:root:root .n-oct-contact-trigger:hover .n-contact-trigger-highlight { opacity:1; } }
+  @media(prefers-reduced-motion:reduce) { :root:root:root:root .n-contact-trigger-frame,:root:root:root:root .n-contact-trigger-highlight { transition:none; } }
+  @media(max-height:700px) { :root:root:root:root .n-contact-dock .n-contact-menu { grid-template-columns:repeat(3,var(--octagon-icon-size)); width:240px; gap:16px; } }
+  @media(max-height:540px) and (min-width:600px) { :root:root:root:root .n-contact-dock .n-contact-menu { grid-template-columns:repeat(5,var(--octagon-icon-size)); width:400px; } }
+
+
+/* September 29: pages/new/consent.astro */
+
+  :root:root:root:root .n-consent-page { padding-bottom:80px; color:var(--paper); background:var(--ink); }
+  :root:root:root:root .n-consent-heading,:root:root:root:root .n-consent-document { width:min(calc(100% - var(--pad) * 2),800px); margin-inline:auto; }
+  :root:root:root:root .n-consent-heading { display:grid; gap:20px; padding:48px 0 32px; border-bottom:1px solid var(--line-dark); }
+  :root:root:root:root .n-consent-heading span { color:var(--lime); font-size:12px; font-weight:600; letter-spacing:.04em; }
+  :root:root:root:root .n-consent-heading h1 { margin:0; font-size:clamp(30px,4vw,52px); font-weight:500; line-height:1.12; letter-spacing:-.03em; }
+  :root:root:root:root .n-consent-document { padding-top:32px; color:#e0e5e1; font-size:18px; line-height:1.75; overflow-wrap:anywhere; }
+  :root:root:root:root .n-consent-document section { padding:28px 0; border-top:1px solid var(--line-dark); }
+  :root:root:root:root .n-consent-document section:first-of-type { margin-top:42px; }
+  :root:root:root:root .n-consent-document h2 { margin:0 0 16px; font-size:clamp(20px,2vw,28px); font-weight:600; line-height:1.2; letter-spacing:-.025em; }
+  :root:root:root:root .n-consent-document p { margin:0 0 18px; }
+  :root:root:root:root .n-consent-document p:last-child { margin-bottom:0; }
+  :root:root:root:root .n-consent-document ul { margin:8px 0 0; padding-left:1.4em; }
+  :root:root:root:root .n-consent-document a { color:inherit; text-decoration:underline; text-underline-offset:4px; }
+  @media (max-width:760px) {
+    :root:root:root:root .n-consent-heading { grid-template-columns:1fr; }
+    :root:root:root:root .n-consent-document { font-size:16px; }
+  }
+
+
+/* September 29: pages/new/about/licenses.astro */
+
+  :root:root:root:root .n-documents { display:grid; gap:40px; }
+  :root:root:root:root .n-document { display:grid; grid-template-columns:minmax(160px,240px) minmax(0,1fr); gap:32px; align-items:start; padding-bottom:40px; border-bottom:1px solid var(--line-dark); }
+  :root:root:root:root .n-document-preview { display:block; background:#fff; }
+  :root:root:root:root .n-document-preview img { display:block; width:100%; height:auto; }
+  :root:root:root:root .n-document h2 { margin:0 0 20px; font-size:clamp(22px,2.4vw,32px); line-height:1.2; overflow-wrap:anywhere; }
+  :root:root:root:root .n-document p { margin:0 0 20px; color:#c7d0ca; font-size:16px; line-height:1.65; overflow-wrap:anywhere; }
+  :root:root:root:root .n-document .n-document-term { color:var(--lime); }
+  :root:root:root:root .n-document-link { display:inline-flex; align-items:center; min-height:44px; color:var(--lime); text-decoration:underline; text-underline-offset:5px; font-size:14px; }
+  :root:root:root:root .n-document a:focus-visible { outline:2px solid var(--lime); outline-offset:5px; }
+  @media(max-width:1050px) { :root:root:root:root .n-document { grid-template-columns:minmax(0,1fr); gap:24px; }:root:root:root:root .n-document-preview { max-width:240px; } }
+  @media(max-width:700px) { :root:root:root:root .n-documents { gap:32px; }:root:root:root:root .n-document { padding-bottom:32px; }:root:root:root:root .n-document-preview { max-width:220px; } }
+
+
+/* September 29: pages/new/training/index.astro */
+
+  :root:root:root:root .n-hub-heading { padding:40px var(--pad) 46px; }
+  :root:root:root:root .n-hub-heading .n-hub-format { color:var(--lime); font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:.08em; margin:0 0 18px; }
+  :root:root:root:root .n-hub-heading h1 { font-size:clamp(38px,6vw,80px); line-height:1.05; letter-spacing:-.03em; text-transform:uppercase; margin:0 0 24px; }
+  :root:root:root:root .n-hub-heading>p:last-child { max-width:62ch; color:rgba(255,255,255,.75); margin:0; }
+  :root:root:root:root .n-hub-catalog { padding-top:0; }
+  @media (max-width:600px) { :root:root:root:root .n-hub-heading { padding-top:28px; padding-bottom:32px; } }
+
