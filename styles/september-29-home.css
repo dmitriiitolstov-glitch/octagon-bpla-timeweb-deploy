@@ -1,0 +1,62 @@
+
+/* HomeDirections */
+
+  :root:root:root:root .home-directions { padding:64px var(--pad); background:var(--ink-soft); scroll-margin-top:var(--header-h); }
+  :root:root:root:root .home-directions h2 { margin:0 0 64px; font-size:clamp(20px,3.7vw,64px); line-height:1.15; letter-spacing:-.03em; text-transform:uppercase; white-space:nowrap; }
+  :root:root:root:root .home-directions-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; }
+  :root:root:root:root .home-direction { --direction-symbol-size:96px; display:grid; grid-template-rows:120px auto 1fr; min-width:0; }
+  :root:root:root:root .home-direction-symbol { display:grid; align-items:end; justify-items:center; padding-bottom:24px; }
+  :root:root:root:root .home-direction-symbol img { width:var(--direction-symbol-size); height:var(--direction-symbol-size); object-fit:contain; }
+  /* The broad storefront carries more visual weight than the two open-line drawings. */
+  :root:root:root:root .home-direction[data-direction="store"] .home-direction-symbol img { width:calc(var(--direction-symbol-size) - 8px); height:calc(var(--direction-symbol-size) - 8px); }
+  :root:root:root:root .home-direction-cover { aspect-ratio:1; overflow:hidden; }
+  :root:root:root:root .home-direction-cover img { width:100%; height:100%; object-fit:contain; transition:transform .3s var(--ease-out); }
+  :root:root:root:root .home-direction-copy { position:relative; padding:24px 40px 0 0; }
+  :root:root:root:root .home-direction-copy h3 { margin:0 0 12px; font-size:clamp(22px,2.3vw,36px); line-height:1.15; letter-spacing:-.02em; }
+  :root:root:root:root .home-direction-copy p { margin:0; max-width:32ch; color:#bfccc6; font-size:16px; }
+  :root:root:root:root .home-direction-copy .n-arrow { position:absolute; top:28px; right:4px; }
+  :root:root:root:root .home-direction:focus-visible { outline:2px solid var(--lime); outline-offset:8px; }
+  :root:root:root:root .home-direction:is(:hover,:focus-visible) h3 { color:var(--lime); }
+  @media(hover:hover) { :root:root:root:root .home-direction:hover .home-direction-cover img { transform:scale(1.025); } }
+  @media(max-width:1000px) { :root:root:root:root .home-directions h2 { margin-bottom:56px; }:root:root:root:root .home-directions-grid { gap:16px; }:root:root:root:root .home-direction { --direction-symbol-size:88px; grid-template-rows:112px auto 1fr; } }
+  @media(max-width:700px) { :root:root:root:root .home-directions { padding-block:40px; }:root:root:root:root .home-directions h2 { margin-bottom:48px; font-size:clamp(16px,4.65vw,32px); }:root:root:root:root .home-directions-grid { grid-template-columns:1fr; gap:40px; }:root:root:root:root .home-direction-copy { padding-top:20px; }:root:root:root:root .home-direction-copy h3 { font-size:28px; } }
+  @media(prefers-reduced-motion:reduce) { :root:root:root:root .home-direction-cover img { transition:none; }:root:root:root:root .home-direction:hover .home-direction-cover img { transform:none; } }
+
+
+/* HomeCommunity */
+
+  :root:root:root:root .home-community { --community-title-size:clamp(22px,2vw,28px); --community-padding:32px; display:grid; grid-template-columns:minmax(0,1.5fr) minmax(320px,1fr); align-items:stretch; background:var(--green); }
+  :root:root:root:root .home-community-links { --octagon-icon-size:48px; display:grid; align-content:start; gap:24px; padding:var(--community-padding) 24px; border-left:1px solid var(--line-dark); background:var(--ink-soft); }
+  :root:root:root:root .home-community-links section { min-width:0; text-align:center; }
+  :root:root:root:root .home-community-links h2 { margin:0 0 16px; font-size:20px; line-height:1.2; }
+  :root:root:root:root .home-community-links #home-social-title { font-size:var(--community-title-size); }
+  :root:root:root:root .home-community-icons { display:flex; justify-content:center; flex-wrap:wrap; gap:16px 12px; }
+  :root:root:root:root .home-community-icons a { display:flex; flex-direction:column; align-items:center; gap:4px; width:60px; font-size:12px; line-height:1.4; }
+  :root:root:root:root .home-community-icons a:focus-visible { outline:2px solid var(--lime); outline-offset:4px; }
+  :root:root:root:root .home-community-socials { max-width:276px; margin-inline:auto; }
+  :root:root:root:root .home-community-icons a:hover { color:var(--lime); }
+  @media(max-width:1000px) { :root:root:root:root .home-community { grid-template-columns:1fr; }:root:root:root:root .home-community-links { border-left:0; border-top:1px solid var(--line-dark); padding-inline:var(--pad); } }
+
+
+/* RussiaPresence */
+
+  :root:root:root:root .russia-presence { min-width:0; display:flex; flex-direction:column; justify-content:flex-start; padding:var(--community-padding) var(--pad); }
+  :root:root:root:root .russia-presence h2 { margin:0 0 16px; font-size:var(--community-title-size); line-height:1.2; }
+  :root:root:root:root .russia-presence .region-branches { display:flex; flex-wrap:wrap; gap:8px 20px; }
+  :root:root:root:root .russia-presence .region-branches button { padding:8px 0; border:0; border-bottom:1px solid var(--lime); background:none; color:var(--lime); text-align:left; cursor:pointer; font-size:14px; min-height:44px; }
+  :root:root:root:root .russia-presence .region-branches button:is(:hover,:focus-visible) { color:#fff; }
+  :root:root:root:root .russia-presence .region-map-art { margin-block:16px; height:clamp(200px,35svh,300px); width:100%; }
+  :root:root:root:root .russia-presence .region-map-art:focus-visible { outline:2px solid var(--lime); outline-offset:4px; }
+  :root:root:root:root .russia-presence .region-keyboard-help { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
+  :root:root:root:root .russia-presence svg { display:block; width:100%; height:100%; }
+  :root:root:root:root .russia-presence .region-shape { fill:#548d7f; stroke:var(--green); stroke-width:.7; stroke-linejoin:round; vector-effect:non-scaling-stroke; transition:fill .15s ease; cursor:pointer; }
+  :root:root:root:root .russia-presence .region-shape.has-branch { fill:var(--lime); }
+  :root:root:root:root .russia-presence .region-shape.is-selected { fill:#f2f2eb; }
+  :root:root:root:root .russia-presence .region-shape.has-branch.is-selected { fill:var(--lime); stroke:#fff; stroke-width:1.5; }
+  :root:root:root:root .russia-presence .region-city-marker { fill:var(--lime); stroke:var(--green); stroke-width:1; pointer-events:none; }
+  :root:root:root:root .russia-presence .region-current { min-height:2.8em; margin:0 0 4px; font-size:14px; line-height:1.4; }
+  :root:root:root:root .russia-presence .region-legend { display:flex; align-items:center; gap:8px; margin:0; color:#d0e3dc; font-size:12px; }
+  :root:root:root:root .russia-presence .region-legend span { width:12px; height:12px; flex:none; background:var(--lime); }
+  @media(max-width:1000px) { :root:root:root:root .russia-presence .region-map-art { height:auto; aspect-ratio:1000/666; max-height:300px; } }
+  @media(prefers-reduced-motion:reduce) { :root:root:root:root .russia-presence .region-shape { transition:none; } }
+
