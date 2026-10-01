@@ -22,6 +22,8 @@
   const scrollDock = document.querySelector('[data-scroll-dock]');
   const scrollDockSlot = document.querySelector('[data-scroll-dock-slot]');
   const floatingContacts = document.querySelector('[data-contact-dock]');
+  const trainingProgress = document.querySelector('[data-training-progress]');
+  const floatingProgressGap = 16;
   const utilityDisclosures = [...document.querySelectorAll('[data-utility-disclosure]')];
   const accessibilityToggles = [...document.querySelectorAll('[data-accessibility-toggle]')];
   const accessibilityStorageKey = 'octagon-accessibility-mode';
@@ -281,14 +283,29 @@
     const parked = !!scrollDockSlot && scrollDockSlot.getBoundingClientRect().bottom <= window.innerHeight - 22;
     const visible = parked || window.scrollY > threshold;
     scrollDock.classList.toggle('is-parked', parked);
+    // Resolve the CSS inset (including safe-area), then clear the progress rail.
+    // The rail belongs to the sticky scene, not to the viewport's bottom edge.
+    scrollDock.style.bottom = 'var(--floating-bottom, 26px)';
+    const baseOffset = parseFloat(getComputedStyle(scrollDock).bottom) || 26;
+    let floatingOffset = baseOffset;
+    if (!parked && trainingProgress && trainingProgress.getClientRects().length) {
+      const rail = trainingProgress.getBoundingClientRect();
+      const controlsHeight = Math.max(scrollDock.offsetHeight, floatingContacts?.offsetHeight || 0);
+      const normalTop = window.innerHeight - baseOffset - controlsHeight;
+      // Once the rail has scrolled above the controls' normal zone, restore the
+      // normal inset rather than dragging the controls up through the content.
+      if (rail.top >= normalTop - floatingProgressGap && rail.top < window.innerHeight) {
+        floatingOffset = Math.max(baseOffset, window.innerHeight - rail.top + floatingProgressGap);
+      }
+    }
+    if (!parked) scrollDock.style.bottom = `${floatingOffset}px`;
     // Both controls share the same bottom edge when the dock parks across the full footer.
     if (floatingContacts && scrollDockSlot) {
-      const baseOffset = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--floating-bottom')) || 26;
       const slot = scrollDockSlot.getBoundingClientRect();
       const dockHeight = scrollDock.getBoundingClientRect().height;
       // Opening near the footer must not squeeze the options behind the fixed header.
       const contactOpen = contactTrigger?.getAttribute('aria-expanded') === 'true';
-      const footerOffset = parked && !contactOpen ? Math.max(baseOffset, window.innerHeight - slot.bottom + (slot.height - dockHeight) / 2) : baseOffset;
+      const footerOffset = parked && !contactOpen ? Math.max(baseOffset, window.innerHeight - slot.bottom + (slot.height - dockHeight) / 2) : floatingOffset;
       floatingContacts.style.bottom = `${footerOffset}px`;
       floatingContacts.style.setProperty('--contact-bottom', `${footerOffset}px`);
     }
