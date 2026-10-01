@@ -1,0 +1,33 @@
+
+  :root:root:root:root .n-catalog-frame { display:grid; grid-template-columns:224px minmax(0,1fr); gap:40px; padding:0 var(--pad) 64px; align-items:start; }
+  :root:root:root:root .n-catalog-sidebar { min-width:0; border-top:1px solid var(--line-dark); }
+  :root:root:root:root .n-catalog-sidebar-title { display:block; padding:20px 0; font-size:20px; font-weight:500; }
+  :root:root:root:root .n-catalog-sidebar-group { padding:16px 0; border-top:1px solid var(--line-dark); }
+  :root:root:root:root .n-catalog-sidebar-group p { margin:0 0 8px; color:var(--lime); font-size:12px; font-weight:600; }
+  :root:root:root:root .n-catalog-sidebar ul { list-style:none; padding:0; margin:0; }
+  :root:root:root:root .n-catalog-sidebar li a { display:flex; align-items:center; min-height:44px; padding:10px 12px; color:#ccd4cf; font-size:14px; line-height:1.45; overflow-wrap:anywhere; }
+  :root:root:root:root .n-catalog-sidebar a[aria-current="page"] { color:var(--lime); }
+  :root:root:root:root .n-catalog-sidebar li a[aria-current="page"] { background:#152218; }
+  :root:root:root:root .n-catalog-sidebar a:hover { color:#fff; text-decoration:underline; text-underline-offset:4px; }
+  :root:root:root:root .n-catalog-content { min-width:0; }
+  :root:root:root:root .n-catalog-content .n-course-section { padding:0; }
+  :root:root:root:root .n-catalog-content .n-course-grid, :root:root:root:root .n-catalog-content .n-direction-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr)); gap:24px; background:none; border:0; }
+  :root:root:root:root .n-catalog-content .n-course-card, :root:root:root:root .n-catalog-content .n-direction-card { display:flex; flex-direction:column; min-width:0; max-width:360px; border:1px solid var(--line-dark); background:var(--ink-soft); }
+  :root:root:root:root .n-catalog-content .n-course-card-media, :root:root:root:root .n-catalog-content .n-direction-card-media { aspect-ratio:1792/2400; min-height:0; background:var(--ink-soft); }
+  :root:root:root:root .n-catalog-content .n-course-card-media img, :root:root:root:root .n-catalog-content .n-direction-card-media img { width:100%; height:100%; object-fit:contain; filter:none; }
+  :root:root:root:root .n-catalog-content .n-course-card:hover img, :root:root:root:root .n-catalog-content .n-direction-card:hover img { transform:none; }
+  :root:root:root:root .n-catalog-content .n-course-card-copy, :root:root:root:root .n-catalog-content .n-direction-card-copy { flex:1; display:flex; flex-direction:column; min-height:0; padding:24px 20px; }
+  :root:root:root:root .n-catalog-content .n-course-card-copy>span, :root:root:root:root .n-catalog-content .n-direction-card-copy>span { color:var(--lime); font-size:10px; margin-bottom:12px; }
+  :root:root:root:root .n-catalog-content .n-course-card h2, :root:root:root:root .n-catalog-content .n-direction-card h2 { margin:0 0 16px; font-size:22px; line-height:1.2; letter-spacing:-.02em; text-transform:none; overflow-wrap:anywhere; hyphens:auto; }
+  :root:root:root:root .n-catalog-content .n-course-card p, :root:root:root:root .n-catalog-content .n-direction-card p { margin:0 0 24px; color:#c7d0ca; font-size:14px; line-height:1.6; }
+  :root:root:root:root .n-catalog-content .n-course-card b, :root:root:root:root .n-catalog-content .n-direction-card b { margin-top:auto; align-self:flex-start; font-size:11px; line-height:1.5; }
+  @media(max-width:900px) { :root:root:root:root .n-catalog-frame { grid-template-columns:184px minmax(0,1fr); gap:24px; } }
+  @media(max-width:700px) {
+    :root:root:root:root .n-catalog-frame { grid-template-columns:minmax(0,1fr); gap:28px; padding-bottom:48px; }
+    :root:root:root:root .n-catalog-sidebar-title { padding-block:16px; }
+    :root:root:root:root .n-catalog-sidebar-group { padding-block:12px; }
+    :root:root:root:root .n-catalog-sidebar ul { display:flex; flex-wrap:wrap; gap:4px 8px; }
+    :root:root:root:root .n-catalog-sidebar li { min-width:0; }
+    :root:root:root:root .n-catalog-sidebar li a { padding:10px; }
+    :root:root:root:root .n-catalog-content .n-course-card, :root:root:root:root .n-catalog-content .n-direction-card { max-width:none; }
+  }

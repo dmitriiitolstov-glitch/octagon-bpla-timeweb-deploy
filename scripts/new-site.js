@@ -16,8 +16,8 @@
   const contactMenu = document.querySelector('[data-contact-menu]');
   const heroSlider = document.querySelector('[data-hero-slider]');
   const heroSlides = [...document.querySelectorAll('[data-hero-slide]')];
-  const heroPrev = document.querySelector('[data-hero-prev]');
-  const heroNext = document.querySelector('[data-hero-next]');
+  const heroPrev = [...document.querySelectorAll('[data-hero-prev]')];
+  const heroNext = [...document.querySelectorAll('[data-hero-next]')];
   const heroCurrent = document.querySelector('[data-hero-current]');
   const scrollDock = document.querySelector('[data-scroll-dock]');
   const scrollDockSlot = document.querySelector('[data-scroll-dock-slot]');
@@ -283,7 +283,7 @@
     scrollDock.classList.toggle('is-parked', parked);
     // Both controls share the same bottom edge when the dock parks across the full footer.
     if (floatingContacts && scrollDockSlot) {
-      const baseOffset = window.innerWidth > 900 ? 22 : 14;
+      const baseOffset = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--floating-bottom')) || 26;
       const slot = scrollDockSlot.getBoundingClientRect();
       const dockHeight = scrollDock.getBoundingClientRect().height;
       // Opening near the footer must not squeeze the options behind the fixed header.
@@ -377,14 +377,15 @@
         const active = slideIndex === nextIndex;
         slide.classList.toggle('is-active', active);
         slide.setAttribute('aria-hidden', String(!active));
+        slide.inert = !active;
       });
       if (heroCurrent) heroCurrent.textContent = String(nextIndex + 1).padStart(2, '0');
       activeHeroIndex = nextIndex;
       decodeHeading(heroSlides[nextIndex]?.querySelector('[data-decode-title]'));
     };
 
-    heroPrev?.addEventListener('click', () => showHero(activeHeroIndex - 1));
-    heroNext?.addEventListener('click', () => showHero(activeHeroIndex + 1));
+    heroPrev.forEach(button => button.addEventListener('click', () => showHero(activeHeroIndex - 1)));
+    heroNext.forEach(button => button.addEventListener('click', () => showHero(activeHeroIndex + 1)));
     showHero(activeHeroIndex);
   }
 
