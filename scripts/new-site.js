@@ -218,10 +218,11 @@
   drawerPhonesOpen?.addEventListener('click', () => setDrawerView('phones'));
   drawerPhonesBack?.addEventListener('click', () => setDrawerView('main'));
 
-  contactTrigger?.addEventListener('click', () => {
+  contactTrigger?.addEventListener('click', (event) => {
     const willOpen = contactTrigger.getAttribute('aria-expanded') !== 'true';
     setContactOpen(willOpen);
-    if (willOpen) requestAnimationFrame(() => {
+    // Pointer/touch opening keeps focus on the trigger; keyboard opening enters the menu.
+    if (willOpen && event.detail === 0) requestAnimationFrame(() => {
       if (contactTrigger.getAttribute('aria-expanded') === 'true') contactMenu?.querySelector('a')?.focus({ preventScroll: true });
     });
   });

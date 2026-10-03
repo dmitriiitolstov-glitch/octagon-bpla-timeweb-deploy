@@ -1,0 +1,42 @@
+/* Compact navigation, approved 2 October. Preserve all routes and focus handling. */
+:root:root:root:root .n-mobile-menu { width:min(390px,100vw); }
+:root:root:root:root .n-drawer-head { min-height:88px; padding:16px 24px; }
+:root:root:root:root .n-drawer-logo img { width:116px; max-height:64px; }
+:root:root:root:root .n-drawer-nav { padding:12px 24px; }
+:root:root:root:root .n-mobile-menu .n-drawer-nav summary,:root:root:root:root .n-mobile-menu .n-drawer-direct { min-height:48px; padding:12px 0; font-size:20px; line-height:1.25; text-transform:none; }
+:root:root:root:root .n-mobile-menu .n-drawer-nav details>a { min-height:44px; padding:10px 0 10px 16px; font-size:15px; line-height:1.5; text-transform:none; }
+:root:root:root:root .n-drawer-footer { padding:20px 24px calc(24px + env(safe-area-inset-bottom)); }
+:root:root:root:root .n-drawer-resource-section { margin-inline:-24px; padding-inline:24px; }
+:root:root:root:root .n-drawer-divider { margin-inline:-24px; }
+:root:root:root:root .n-drawer-info>div { grid-template-columns:88px minmax(0,1fr); }
+:root:root:root:root .n-drawer-phone-copy strong { font-size:20px; }
+:root:root:root:root[data-accessibility-mode="true"] .n-mobile-menu .n-drawer-nav :is(summary,.n-drawer-direct) { font-size:24px; }
+/* Legal links must wrap at intermediate desktop widths as well as on phones. */
+:root:root:root:root .n-footer-bottom { flex-wrap:wrap; }
+:root:root:root:root .n-footer-bottom>* { max-width:100%; white-space:normal; overflow-wrap:anywhere; }
+
+
+  :root:root:root:root .n-contact-dock { right:max(var(--pad),env(safe-area-inset-right)); }
+  :root:root:root:root .n-contact-trigger-raster { display:block; position:relative; flex:none; width:64px; height:68px; overflow:hidden; clip-path:polygon(0 31%,28%6%,43%6%,43%0,57%0,57%6%,72%6%,100%31%,100%72%,72%100%,28%100%,0 72%); }
+  :root:root:root:root .n-contact-trigger-raster img { position:absolute; width:100px; height:100px; max-width:none; left:-18px; top:-13px; }
+  :root:root:root:root .n-contact-dock .n-contact-trigger-art { display:none; }
+  :root:root:root:root .n-oct-contact-trigger[aria-expanded="true"] .n-contact-trigger-raster { display:none; }
+  :root:root:root:root .n-contact-dock .n-oct-contact-trigger[aria-expanded="true"] .n-contact-trigger-art { display:block; }
+  :root:root:root:root .n-contact-dock .n-contact-menu { display:grid; grid-template-columns:var(--octagon-icon-size); justify-content:center; width:88px; right:-12px; max-width:calc(100vw - 28px); max-height:calc(100dvh - var(--floating-bottom,26px) - 100px); overflow-y:auto; overscroll-behavior:contain; padding:8px 12px; gap:16px; background:transparent; border:0; box-shadow:none; bottom:84px; scrollbar-width:none; }
+  :root:root:root:root .n-contact-menu .n-oct-contact-option { display:block; width:var(--octagon-icon-size); height:var(--octagon-icon-size); min-height:44px; padding:0; border:0; color:#fff; text-decoration:none; }
+  :root:root:root:root .n-contact-dock>button.n-oct-contact-trigger { position:relative; display:flex; flex-direction:column; width:64px; height:68px; min-width:0; padding:0; background:none; border:0; box-shadow:none; color:var(--paper); }
+  :root:root:root:root .n-contact-dock>button.n-oct-contact-trigger .n-contact-trigger-label { display:block; padding:1px 4px; background:var(--ink); color:var(--paper); font-size:10px; font-weight:500; line-height:16px; letter-spacing:.03em; text-shadow:none; }
+  :root:root:root:root .n-contact-trigger-art { display:block; flex:none; width:var(--octagon-icon-size); height:var(--octagon-icon-size); overflow:visible; }
+  :root:root:root:root .n-contact-trigger-frame { fill:var(--ink); stroke:rgba(242,242,235,.8); stroke-width:1.25; transition:stroke .2s ease; }
+  :root:root:root:root .n-contact-trigger-highlight { opacity:0; transition:opacity .2s ease; }
+  :root:root:root:root .n-contact-close-icon { display:none; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; }
+  :root:root:root:root .n-oct-contact-trigger[aria-expanded="true"] .n-contact-symbol { display:none; }
+  :root:root:root:root .n-oct-contact-trigger[aria-expanded="true"] .n-contact-close-icon { display:block; }
+  :root:root:root:root .n-oct-contact-option:focus-visible { outline:2px solid var(--lime); outline-offset:4px; }
+  :root:root:root:root .n-contact-dock>button.n-oct-contact-trigger:focus-visible { outline:2px solid var(--lime); outline-offset:6px; }
+  :root:root:root:root .n-oct-contact-trigger:focus-visible .n-contact-trigger-frame { stroke:var(--lime); stroke-width:3; }
+  :root:root:root:root .n-oct-contact-trigger:focus-visible .n-contact-trigger-label { color:var(--lime); text-decoration:underline; text-underline-offset:3px; }
+  :root:root:root:root .n-oct-contact-trigger:is(:focus-visible,:active,[aria-expanded="true"]) .n-contact-trigger-highlight { opacity:1; }
+  @media(hover:hover) { :root:root:root:root .n-oct-contact-trigger:hover .n-contact-trigger-frame { stroke:var(--lime); }:root:root:root:root .n-oct-contact-trigger:hover .n-contact-trigger-highlight { opacity:1; } }
+  @media(prefers-reduced-motion:reduce) { :root:root:root:root .n-contact-trigger-frame,:root:root:root:root .n-contact-trigger-highlight { transition:none; } }
+  @media(max-height:700px) { :root:root:root:root .n-contact-dock .n-contact-menu { gap:8px; } }
