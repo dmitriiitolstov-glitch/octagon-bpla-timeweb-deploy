@@ -1,0 +1,110 @@
+
+  :root:root:root:root:root .home-community { --community-icon-size:clamp(60px,5.6vw,96px); display:grid; grid-template-columns:minmax(0,16fr) minmax(0,9fr); align-items:start; gap:32px; padding:48px var(--pad); background:var(--ink-soft); }
+  :root:root:root:root:root .home-community-links { grid-column:2; grid-row:1; display:grid; align-content:center; gap:24px; padding:24px; border:1px solid var(--lime); min-width:0; }
+  :root:root:root:root:root .home-community-links section { min-width:0; text-align:center; }
+  :root:root:root:root:root .home-community-links h2 { margin:0 0 12px; font-size:clamp(18px,1.4vw,24px); line-height:1.25; }
+  :root:root:root:root:root .home-community-links #home-social-title { font-size:clamp(22px,1.8vw,30px); }
+  :root:root:root:root:root .home-community-bottom { display:grid; grid-template-columns:repeat(4,var(--community-icon-size)); gap:8px; width:max-content; margin-inline:auto; }
+  :root:root:root:root:root .home-community-bottom>section:first-child { grid-column:1 / 3; }
+  :root:root:root:root:root .home-community-bottom>section:last-child { grid-column:4; }
+  :root:root:root:root:root .home-community-bottom h2 { font-size:clamp(16px,1.35vw,24px); }
+  :root:root:root:root:root .home-community-icons { display:flex; justify-content:center; flex-wrap:wrap; gap:12px 8px; }
+  :root:root:root:root:root .home-community-icons a { display:block; width:var(--community-icon-size); height:var(--community-icon-size); overflow:hidden; }
+  :root:root:root:root:root .home-community-icons img { display:block; width:100%; height:100%; object-fit:contain; mix-blend-mode:screen; transform:scale(1.25); transition:transform .2s ease; }
+  :root:root:root:root:root .home-community-icons a:focus-visible { outline:2px solid var(--lime); outline-offset:4px; }
+  :root:root:root:root:root .home-community-socials { max-width:calc(var(--community-icon-size) * 4 + 24px); margin-inline:auto; }
+  @media(hover:hover) { :root:root:root:root:root .home-community-icons a:hover img { transform:scale(1.32); } }
+  :root:root:root:root:root .home-community-video{display:contents}
+  :root:root:root:root:root .home-video-player{grid-column:1;grid-row:1;position:relative;aspect-ratio:16/9;min-width:0;border:1px solid var(--lime);background:#000}
+  :root:root:root:root:root .home-video-player iframe{display:block;width:100%;height:100%;border:0}
+  :root:root:root:root:root .home-video-player button{position:absolute;inset:0;display:grid;place-items:center;width:100%;height:100%;border:0;padding:0;background:#000;color:var(--lime);cursor:pointer}
+  :root:root:root:root:root .home-video-player button>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.45}
+  :root:root:root:root:root .home-video-player button>span{position:relative;display:grid;justify-items:center;gap:12px;padding:24px;text-align:center}
+  :root:root:root:root:root .home-video-player strong{color:#fff;font-size:clamp(20px,2vw,32px);font-weight:500}
+  :root:root:root:root:root .home-video-player small{color:#fff;font-size:16px}
+  :root:root:root:root:root .home-video-player button:hover>img{opacity:.6}
+  :root:root:root:root:root .home-community-video>a{grid-column:1;grid-row:2;justify-self:start;font-size:16px;text-decoration:underline;text-underline-offset:4px}
+  @media(min-width:1121px) { :root:root:root:root:root .home-community { align-items:stretch; row-gap:16px; --community-icon-size:clamp(48px,4.5vw,96px); }:root:root:root:root:root .home-community-links { gap:16px; padding:16px; }:root:root:root:root:root .home-video-player { aspect-ratio:auto; min-height:0; }:root:root:root:root:root .home-community-links { aspect-ratio:1; } }
+  @media(max-width:1120px) { :root:root:root:root:root .home-community { grid-template-columns:1fr; --community-icon-size:clamp(48px,11vw,96px); }:root:root:root:root:root .home-community-links { grid-column:1; grid-row:3; padding:32px 24px; }:root:root:root:root:root .home-community-links h2 { font-size:22px; }:root:root:root:root:root .home-community-bottom h2 { font-size:18px; } }
+  @media(max-width:480px) { :root:root:root:root:root .home-community { padding-block:32px; gap:24px; }:root:root:root:root:root .home-community-links { padding:24px 12px; }:root:root:root:root:root .home-community-links h2 { font-size:18px; }:root:root:root:root:root .home-community-links #home-social-title { font-size:22px; }:root:root:root:root:root .home-community-bottom { gap:8px; } }
+  @media(max-width:480px) { :root:root:root:root:root .home-video-player button>span { padding:12px; gap:8px; }:root:root:root:root:root .home-video-player svg { width:44px; height:44px; }:root:root:root:root:root .home-video-player strong { font-size:18px; line-height:1.2; }:root:root:root:root:root .home-video-player small { font-size:14px; } }
+  @media(prefers-reduced-motion:reduce) { :root:root:root:root:root .home-community-icons img { transition:none; } }
+
+
+ :root:root:root:root:root .home-press { padding:80px var(--pad); background:var(--paper); color:var(--ink); }
+ :root:root:root:root:root .home-press>h2 { margin:0 0 64px; text-align:center; font-size:clamp(32px,3.7vw,64px); font-weight:500; line-height:1.15; letter-spacing:-.03em; }
+ :root:root:root:root:root .home-press-defs { position:absolute; width:0; height:0; overflow:hidden; pointer-events:none; }
+ :root:root:root:root:root .home-press-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:24px; }
+ :root:root:root:root:root .home-press-item { display:grid; grid-template-rows:auto auto auto 1fr auto; gap:16px; min-width:0; text-align:center; }
+ :root:root:root:root:root .home-press-icon { width:120px; height:120px; justify-self:center; overflow:hidden; margin-bottom:8px; }
+ :root:root:root:root:root .home-press-cover { width:100%; height:auto; aspect-ratio:1; object-fit:cover; }
+ :root:root:root:root:root .home-press-item h3 { margin:8px 0 0; font-size:clamp(20px,1.8vw,28px); font-weight:500; line-height:1.2; }
+ :root:root:root:root:root .home-press-item p { margin:0; font-size:16px; line-height:1.5; color:#40544c; }
+ :root:root:root:root:root .home-press-arrow { display:flex; justify-content:flex-end; border-bottom:1px solid #839189; padding:8px 0 16px; color:var(--green); }
+ :root:root:root:root:root .home-press-item:hover .home-press-arrow { color:var(--ink); border-color:var(--ink); }
+ :root:root:root:root:root .home-press-item:focus-visible { outline:2px solid var(--green); outline-offset:6px; }
+ @media(max-width:1000px) { :root:root:root:root:root .home-press-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:40px 24px; } }
+ @media(max-width:700px) { :root:root:root:root:root .home-press>h2 { margin-bottom:48px; } }
+ @media(max-width:540px) { :root:root:root:root:root .home-press { padding-block:48px; }:root:root:root:root:root .home-press-grid { grid-template-columns:1fr; gap:40px; }:root:root:root:root:root .home-press-item h3 { font-size:24px; } }
+
+
+:root:root:root:root:root .oc-contact{--oc-bg:#050706;--oc-fg:#fff;--oc-lime:#c5f468;--oc-muted:#a0a6a2;--oc-line:rgba(255,255,255,.18);background:var(--oc-bg);color:var(--oc-fg);font-family:Onest,"Segoe UI",Arial,sans-serif;padding:clamp(60px,7vw,112px) clamp(20px,4vw,64px);box-sizing:border-box}
+:root:root:root:root:root .oc-contact *{box-sizing:border-box}
+:root:root:root:root:root .oc-contact a{color:inherit;text-decoration:none;-webkit-tap-highlight-color:transparent}
+:root:root:root:root:root .oc-contact a:focus-visible{outline:2px solid var(--oc-lime);outline-offset:6px}
+:root:root:root:root:root .oc-inner{max-width:1472px;margin:0 auto}
+:root:root:root:root:root .oc-main{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(48px,7vw,112px);align-items:start}
+:root:root:root:root:root .oc-contact h2{margin:0;font-size:clamp(44px,5.05vw,80px);font-weight:500;line-height:1.02;letter-spacing:-.04em;text-transform:uppercase}
+:root:root:root:root:root .oc-intro p{max-width:480px;margin:28px 0 0;color:var(--oc-muted);font-size:18px;line-height:1.55}
+:root:root:root:root:root .oc-request-row{--oc-action-height:76px;display:flex;align-items:center;gap:19px;width:100%;max-width:457px;margin-top:38px}
+:root:root:root:root:root .oc-mail>.oc-icon{width:58px;height:58px;flex:none}
+:root:root:root:root:root .oc-request-art{display:flex;align-items:center;justify-content:center;width:58px;height:var(--oc-action-height);flex:none}
+:root:root:root:root:root .oc-request-art>.oc-icon{width:var(--oc-action-height);height:var(--oc-action-height);flex:none}
+:root:root:root:root:root .oc-cta{display:flex;align-items:center;gap:18px;flex:1;min-width:0;max-width:380px;min-height:var(--oc-action-height);height:var(--oc-action-height);padding:15px 24px;background:var(--oc-lime);color:var(--oc-bg)!important;font-size:15px;font-weight:500;letter-spacing:.025em;text-transform:uppercase;transition:background .2s,transform .2s}
+:root:root:root:root:root .oc-cta:hover{background:#d7ff8d;transform:translateY(-2px)}
+:root:root:root:root:root .oc-cta .oc-arrow{margin-left:auto;width:22px;height:22px}
+:root:root:root:root:root .oc-hours{display:flex;align-items:center;gap:9px;margin-top:19px;color:var(--oc-muted);font-size:13px;line-height:1.5}
+:root:root:root:root:root .oc-hours svg{width:15px;height:15px;flex:none}
+:root:root:root:root:root .oc-phones{border-top:1px solid var(--oc-line)}
+:root:root:root:root:root .oc-phone{display:flex;align-items:center;gap:24px;padding:24px 0;border-bottom:1px solid var(--oc-line);transition:background .2s}
+:root:root:root:root:root .oc-phone>.oc-icon{width:66px;height:68px;flex:none}
+:root:root:root:root:root .oc-phone-copy{display:flex;flex-direction:column;gap:7px;min-width:0}
+:root:root:root:root:root .oc-department{font-size:15px;font-weight:500;color:var(--oc-lime)}
+:root:root:root:root:root .oc-number{font-size:clamp(23px,2.15vw,34px);font-weight:400;letter-spacing:-.035em;line-height:1.15;white-space:nowrap}
+:root:root:root:root:root .oc-hint{font-size:12px;line-height:1.45;color:var(--oc-muted)}
+:root:root:root:root:root .oc-arrow{width:24px;height:24px;flex:none;transition:transform .2s,color .2s}
+:root:root:root:root:root .oc-phone>.oc-arrow{margin-left:auto;color:#747c76;width:22px;height:22px}
+:root:root:root:root:root .oc-phone:hover .oc-number{color:var(--oc-lime)}
+:root:root:root:root:root .oc-phone:hover>.oc-arrow,:root:root:root:root:root .oc-messenger:hover>.oc-arrow,:root:root:root:root:root .oc-mail:hover>.oc-arrow{color:var(--oc-lime);transform:translate(2px,-2px)}
+:root:root:root:root:root .oc-bottom{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(48px,7vw,112px);margin-top:56px;padding-top:30px;border-top:1px solid var(--oc-line);align-items:center}
+:root:root:root:root:root .oc-mail{display:flex;gap:19px;align-items:center;max-width:460px}
+:root:root:root:root:root .oc-mail-copy{display:flex;flex-direction:column;gap:8px}
+:root:root:root:root:root .oc-mail-caption{color:var(--oc-muted);font-size:13px}
+:root:root:root:root:root .oc-email{font-size:24px;letter-spacing:-.025em}
+:root:root:root:root:root .oc-mail>.oc-arrow{width:20px;height:20px;margin-left:auto;color:#747c76}
+:root:root:root:root:root .oc-social-title{margin:0 0 15px;font-size:13px;color:var(--oc-muted)}
+:root:root:root:root:root .oc-socials{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+:root:root:root:root:root .oc-messenger{display:flex;align-items:center;gap:10px;min-height:52px;font-size:13px;font-weight:500}
+:root:root:root:root:root .oc-messenger>.oc-icon{width:43px;height:43px;flex:none}
+:root:root:root:root:root .oc-messenger>.oc-arrow{width:13px;height:13px;color:#747c76;margin-left:auto}
+:root:root:root:root:root .oc-messenger:hover{color:var(--oc-lime)}
+:root:root:root:root:root .oc-defs{position:absolute;width:0;height:0;overflow:hidden;pointer-events:none}
+@media(min-width:1800px){:root:root:root:root:root .oc-inner{max-width:1800px}:root:root:root:root:root .oc-contact h2{font-size:92px}:root:root:root:root:root .oc-intro p{max-width:580px;font-size:20px}:root:root:root:root:root .oc-phone{padding:28px 0}:root:root:root:root:root .oc-messenger{font-size:16px}}
+@media(max-width:1100px) and (min-width:761px){:root:root:root:root:root .oc-main,:root:root:root:root:root .oc-bottom{gap:40px;grid-template-columns:1fr 1fr}:root:root:root:root:root .oc-contact h2{font-size:clamp(38px,5.3vw,58px)}:root:root:root:root:root .oc-intro p{font-size:16px}:root:root:root:root:root .oc-phone{gap:16px}:root:root:root:root:root .oc-phone>.oc-icon{width:48px;height:54px}:root:root:root:root:root .oc-number{font-size:24px}:root:root:root:root:root .oc-hint{font-size:11px}:root:root:root:root:root .oc-messenger{gap:6px;font-size:11px}:root:root:root:root:root .oc-messenger>.oc-icon{width:34px;height:34px}:root:root:root:root:root .oc-messenger>.oc-arrow{display:none}}
+@media(max-width:760px){:root:root:root:root:root .oc-contact{padding:56px 24px}:root:root:root:root:root .oc-main,:root:root:root:root:root .oc-bottom{grid-template-columns:1fr;gap:36px}:root:root:root:root:root .oc-contact h2{font-size:clamp(39px,8.3vw,62px)}:root:root:root:root:root .oc-intro p{font-size:16px;max-width:480px;margin-top:23px}:root:root:root:root:root .oc-request-row{--oc-action-height:68px;max-width:none;margin-top:27px}:root:root:root:root:root .oc-cta{max-width:none}:root:root:root:root:root .oc-phones{margin-top:0}:root:root:root:root:root .oc-phone{padding:23px 0;gap:19px}:root:root:root:root:root .oc-phone>.oc-icon{width:52px;height:57px}:root:root:root:root:root .oc-number{font-size:clamp(24px,6vw,32px)}:root:root:root:root:root .oc-hint{font-size:11px}:root:root:root:root:root .oc-bottom{margin-top:35px;padding-top:28px;gap:30px}:root:root:root:root:root .oc-mail{max-width:none}:root:root:root:root:root .oc-email{font-size:24px}:root:root:root:root:root .oc-socials{gap:9px}:root:root:root:root:root .oc-messenger{flex-direction:column;align-items:center;justify-content:center;gap:10px;min-height:102px;border:1px solid var(--oc-line);font-size:12px;padding:12px 5px}:root:root:root:root:root .oc-messenger>.oc-arrow{display:none}:root:root:root:root:root .oc-messenger>.oc-icon{width:43px;height:43px}:root:root:root:root:root .oc-social-title{margin-bottom:14px}}
+@media(max-width:360px){:root:root:root:root:root .oc-contact{padding:44px 18px}:root:root:root:root:root .oc-contact h2{font-size:32px}:root:root:root:root:root .oc-phone{gap:13px}:root:root:root:root:root .oc-phone>.oc-icon{width:40px}:root:root:root:root:root .oc-number{font-size:21px}:root:root:root:root:root .oc-department{font-size:14px}:root:root:root:root:root .oc-phone>.oc-arrow,:root:root:root:root:root .oc-mail>.oc-arrow{display:none}:root:root:root:root:root .oc-email{font-size:21px}:root:root:root:root:root .oc-mail,:root:root:root:root:root .oc-request-row{gap:14px}:root:root:root:root:root .oc-mail>.oc-icon{width:44px;height:44px}:root:root:root:root:root .oc-request-art{width:44px}:root:root:root:root:root .oc-cta{padding:15px 17px;gap:12px;font-size:13px}}
+/* Unified footer: matching captions, icon boxes, typography and contact rows. */
+:root:root:root:root:root .oc-bottom{align-items:start}
+:root:root:root:root:root .oc-mail-caption,:root:root:root:root:root .oc-social-title{margin:0 0 15px;font-size:13px;font-weight:400;line-height:20px;color:var(--oc-muted)}
+:root:root:root:root:root .oc-mail-caption{padding-left:77px}
+:root:root:root:root:root .oc-bottom .oc-mail,:root:root:root:root:root .oc-bottom .oc-messenger{display:flex;flex-direction:row;align-items:center;justify-content:flex-start;gap:19px;min-height:58px;padding:0;border:0;font-size:16px;font-weight:500;line-height:1.4}
+:root:root:root:root:root .oc-bottom .oc-mail>.oc-icon,:root:root:root:root:root .oc-bottom .oc-messenger>.oc-icon{width:58px;height:58px;flex:0 0 58px}
+:root:root:root:root:root .oc-bottom .oc-email{font-size:inherit;font-weight:inherit;line-height:inherit;letter-spacing:normal}
+:root:root:root:root:root .oc-bottom .oc-mail>.oc-arrow,:root:root:root:root:root .oc-bottom .oc-messenger>.oc-arrow{display:block;width:16px;height:16px;margin-left:auto;color:#747c76}
+:root:root:root:root:root .oc-socials{gap:16px}
+@media(max-width:1500px){:root:root:root:root:root .oc-bottom .oc-mail>.oc-arrow,:root:root:root:root:root .oc-bottom .oc-messenger>.oc-arrow{display:none}}
+@media(min-width:761px) and (max-width:1300px){:root:root:root:root:root .oc-socials{grid-template-columns:1fr;gap:14px}}
+@media(max-width:760px){:root:root:root:root:root .oc-socials{grid-template-columns:1fr;gap:14px}:root:root:root:root:root .oc-bottom .oc-mail>.oc-arrow,:root:root:root:root:root .oc-bottom .oc-messenger>.oc-arrow{display:block}}
+@media(max-width:360px){:root:root:root:root:root .oc-bottom .oc-mail>.oc-icon,:root:root:root:root:root .oc-bottom .oc-messenger>.oc-icon{width:44px;height:44px;flex-basis:44px}:root:root:root:root:root .oc-bottom .oc-mail,:root:root:root:root:root .oc-bottom .oc-messenger{gap:14px;min-height:44px}:root:root:root:root:root .oc-mail-caption{padding-left:58px}:root:root:root:root:root .oc-bottom .oc-mail>.oc-arrow,:root:root:root:root:root .oc-bottom .oc-messenger>.oc-arrow{display:none}}
+@media(prefers-reduced-motion:reduce){:root:root:root:root:root .oc-contact *{transition:none!important}}
+
