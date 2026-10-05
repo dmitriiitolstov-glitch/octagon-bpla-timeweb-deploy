@@ -1,0 +1,17 @@
+/* Existing Octagon navigation, expanded without shrinking its type. */
+:root:root:root:root:root:root .n-nav { gap:clamp(12px,1.7vw,28px); }
+:root:root:root:root:root:root .n-nav-split { display:flex; align-items:center; height:100%; }
+:root:root:root:root:root:root .n-nav .n-nav-split>button { min-width:44px; min-height:44px; justify-content:center; }
+:root:root:root:root:root:root .n-nav-split .n-menu-plus { margin:0; }
+:root:root:root:root:root:root .n-nav>button,:root:root:root:root:root:root .n-nav>a { min-height:44px; }
+:root:root:root:root:root:root .n-mega { max-height:calc(100dvh - var(--header-h)); overflow-y:auto; }
+:root:root:root:root:root:root .n-mega-government { grid-template-columns:1.2fr 2fr; }
+:root:root:root:root:root:root .n-coming-soon { padding:12px 0; color:#c7d0ca; font-size:15px; line-height:1.5; }
+:root:root:root:root:root:root .n-coming-soon small { display:inline-block; margin-left:10px; color:var(--lime); font-size:12px; }
+:root:root:root:root:root:root .n-mega-intro .n-coming-soon { margin-top:24px; }
+:root:root:root:root:root:root .n-mega-column a { overflow-wrap:break-word; }
+:root:root:root:root:root:root .n-mobile-menu .n-coming-soon { padding:10px 0 10px 16px; }
+:root:root:root:root:root:root .n-mobile-menu .n-drawer-nav summary>a { flex:1; min-width:0; }
+:root:root:root:root:root:root .n-mobile-menu .n-drawer-nav summary>span { min-width:44px; min-height:44px; display:grid; place-items:center; }
+@media (max-width:1320px) { :root:root:root:root:root:root .n-header .n-nav { display:none; } }
+:root:root:root:root:root:root .n-mega.is-keyboard-open { transition:none; }

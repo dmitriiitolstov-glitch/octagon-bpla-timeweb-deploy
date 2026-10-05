@@ -1,0 +1,37 @@
+/* Category/result rhythm follows the approved offline catalogue. */
+.oc-catalog-heading { padding:36px var(--pad) 44px; }
+.oc-catalog-heading h1 { margin:0 0 20px; font-size:clamp(38px,4vw,64px); line-height:1.1; letter-spacing:-.03em; }
+.oc-catalog-heading p { max-width:70ch; color:#c7d0ca; line-height:1.7; }
+.oc-catalog-layout { display:grid; grid-template-columns:240px minmax(0,1fr); gap:40px; padding:0 var(--pad) 80px; align-items:start; }
+.oc-catalog-filters { min-width:0; border-top:1px solid var(--line-dark); }
+.oc-catalog-filters>div { border-top:1px solid var(--line-dark); padding-block:20px; }
+.oc-catalog-filters h2 { margin:0 0 12px; font-size:13px; line-height:1.5; text-transform:uppercase; letter-spacing:.04em; color:var(--lime); }
+.oc-catalog-filters a { display:flex; align-items:center; min-height:44px; padding:10px 12px; font-size:15px; color:#c7d0ca; overflow-wrap:break-word; }
+.oc-catalog-filters a[aria-current] { background:#152218; color:var(--lime); }
+.oc-catalog-filters a:hover { color:#fff; text-decoration:underline; text-underline-offset:4px; }
+.oc-catalog-results { min-width:0; }
+.oc-catalog-result-heading { display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:12px 24px; border-top:1px solid var(--line-dark); padding:20px 0 28px; }
+.oc-catalog-result-heading h2 { margin:0; font-size:28px; line-height:1.3; }
+.oc-catalog-result-heading span { color:#c7d0ca; font-size:14px; font-variant-numeric:tabular-nums; }
+.oc-catalog-empty { padding:48px 0; border-block:1px solid var(--line-dark); }
+.oc-catalog-empty h3 { max-width:28ch; margin:0 0 20px; font-size:clamp(24px,2.5vw,36px); line-height:1.2; }
+.oc-catalog-empty p { max-width:60ch; color:#c7d0ca; margin:0 0 28px; line-height:1.7; }
+.oc-catalog-enquiry { display:inline-flex; align-items:center; min-height:44px; gap:20px; margin:12px 24px; }
+.oc-product-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr)); gap:24px; }
+.oc-product-grid article { border:1px solid var(--line-dark); padding:20px; min-width:0; }
+.oc-product-grid img { width:100%; height:auto; aspect-ratio:1; object-fit:contain; }
+.oc-catalog [hidden] { display:none!important; }
+@media(max-width:900px) { .oc-catalog-layout { grid-template-columns:200px minmax(0,1fr); gap:24px; } }
+@media(max-width:700px) {
+  .oc-catalog-layout { grid-template-columns:minmax(0,1fr); gap:32px; padding-bottom:48px; }
+  .oc-catalog-filters>div { display:flex; flex-wrap:wrap; gap:4px; padding-block:16px; }
+  .oc-catalog-filters h2 { flex-basis:100%; }
+  .oc-catalog-filters a { padding-inline:10px; }
+  .oc-catalog-heading { padding-block:28px 32px; }
+  .oc-catalog-result-heading h2 { font-size:26px; }
+  .oc-catalog-empty { padding-block:28px; }
+  .oc-catalog-enquiry { margin:16px 0 0; display:flex; }
+}
+
+.n-training-breadcrumbs[data-astro-cid-4jhso2hv]{padding:22px var(--pad);border-bottom:1px solid var(--line-dark);font-size:13px}ol[data-astro-cid-4jhso2hv]{flex-wrap:wrap;align-items:center;gap:8px 0;margin:0;padding:0;list-style:none;display:flex}li[data-astro-cid-4jhso2hv]{align-items:baseline;min-width:0;max-width:100%;display:flex}li[data-astro-cid-4jhso2hv]+li[data-astro-cid-4jhso2hv]:before{content:"/";color:#ffffff80;flex:none;padding:0 12px}a[data-astro-cid-4jhso2hv]{color:#ffffffb8;text-underline-offset:4px;text-decoration:underline}a[data-astro-cid-4jhso2hv]:hover,a[data-astro-cid-4jhso2hv]:focus-visible{color:var(--lime)}span[data-astro-cid-4jhso2hv]{color:#fff}a[data-astro-cid-4jhso2hv],span[data-astro-cid-4jhso2hv]{overflow-wrap:anywhere}@media (width<=600px){.n-training-breadcrumbs[data-astro-cid-4jhso2hv]{padding-block:16px;font-size:12px}li[data-astro-cid-4jhso2hv]+li[data-astro-cid-4jhso2hv]:before{padding-inline:8px}}
+.oc-catalog-heading{padding:36px var(--pad) 44px}.oc-catalog-heading h1{letter-spacing:-.03em;margin:0 0 20px;font-size:clamp(38px,4vw,64px);line-height:1.1}.oc-catalog-heading p{color:#c7d0ca;max-width:70ch;line-height:1.7}.oc-catalog-layout{padding:0 var(--pad) 80px;grid-template-columns:240px minmax(0,1fr);align-items:start;gap:40px;display:grid}.oc-catalog-filters{border-top:1px solid var(--line-dark);min-width:0}.oc-catalog-filters>div{border-top:1px solid var(--line-dark);padding-block:20px}.oc-catalog-filters h2{text-transform:uppercase;letter-spacing:.04em;color:var(--lime);margin:0 0 12px;font-size:13px;line-height:1.5}.oc-catalog-filters a{color:#c7d0ca;overflow-wrap:break-word;align-items:center;min-height:44px;padding:10px 12px;font-size:15px;display:flex}.oc-catalog-filters a[aria-current]{color:var(--lime);background:#152218}.oc-catalog-filters a:hover{color:#fff;text-underline-offset:4px;text-decoration:underline}.oc-catalog-results{min-width:0}.oc-catalog-result-heading{border-top:1px solid var(--line-dark);flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:12px 24px;padding:20px 0 28px;display:flex}.oc-catalog-result-heading h2{margin:0;font-size:28px;line-height:1.3}.oc-catalog-result-heading span{color:#c7d0ca;font-variant-numeric:tabular-nums;font-size:14px}.oc-catalog-empty{border-block:1px solid var(--line-dark);padding:48px 0}.oc-catalog-empty h3{max-width:28ch;margin:0 0 20px;font-size:clamp(24px,2.5vw,36px);line-height:1.2}.oc-catalog-empty p{color:#c7d0ca;max-width:60ch;margin:0 0 28px;line-height:1.7}.oc-catalog-enquiry{align-items:center;gap:20px;min-height:44px;margin:12px 24px;display:inline-flex}.oc-product-grid{grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr));gap:24px;display:grid}.oc-product-grid article{border:1px solid var(--line-dark);min-width:0;padding:20px}.oc-product-grid img{aspect-ratio:1;object-fit:contain;width:100%;height:auto}.oc-catalog [hidden]{display:none!important}@media (width<=900px){.oc-catalog-layout{grid-template-columns:200px minmax(0,1fr);gap:24px}}@media (width<=700px){.oc-catalog-layout{grid-template-columns:minmax(0,1fr);gap:32px;padding-bottom:48px}.oc-catalog-filters>div{flex-wrap:wrap;gap:4px;padding-block:16px;display:flex}.oc-catalog-filters h2{flex-basis:100%}.oc-catalog-filters a{padding-inline:10px}.oc-catalog-heading{padding-block:28px 32px}.oc-catalog-result-heading h2{font-size:26px}.oc-catalog-empty{padding-block:28px}.oc-catalog-enquiry{margin:16px 0 0;display:flex}}

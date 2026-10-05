@@ -93,7 +93,10 @@
   const closeMegas = () => {
     window.clearTimeout(megaCloseTimer);
     megaTriggers.forEach((trigger) => trigger.setAttribute('aria-expanded', 'false'));
-    megaPanels.forEach((panel) => panel.setAttribute('aria-hidden', 'true'));
+    megaPanels.forEach((panel) => {
+      panel.setAttribute('aria-hidden', 'true');
+      panel.classList.remove('is-keyboard-open');
+    });
   };
 
   const setDrawerView = (name, { moveFocus = true } = {}) => {
@@ -180,7 +183,18 @@
     trigger.addEventListener('pointerleave', () => {
       if (hoverNavigation.matches) scheduleMegaClose();
     });
-    trigger.addEventListener('focus', () => openMega(trigger));
+    trigger.addEventListener('focus', () => {
+      if (trigger.tagName === 'A' && hoverNavigation.matches) openMega(trigger);
+    });
+    trigger.addEventListener('keydown', (event) => {
+      if (event.key !== 'ArrowDown') return;
+      event.preventDefault();
+      openMega(trigger);
+      // Keyboard opening is immediate: focus cannot enter a visibility transition.
+      const panel = document.querySelector(`[data-mega="${trigger.dataset.megaTrigger}"]`);
+      panel?.classList.add('is-keyboard-open');
+      panel?.querySelector('a[href]')?.focus();
+    });
   });
 
   megaPanels.forEach((panel) => {
@@ -194,6 +208,17 @@
       if (!(next instanceof Element) || (!next.closest('[data-mega]') && !next.closest('[data-mega-trigger]'))) {
         scheduleMegaClose();
       }
+    });
+  });
+
+  // The store label navigates; its separate button opens categories on touch/keyboard.
+  document.querySelectorAll('[data-mega-hover]').forEach((group) => {
+    const trigger = group.querySelector('[data-mega-trigger]');
+    group.addEventListener('pointerenter', () => {
+      if (hoverNavigation.matches && trigger) openMega(trigger);
+    });
+    group.addEventListener('pointerleave', () => {
+      if (hoverNavigation.matches) scheduleMegaClose();
     });
   });
 
@@ -264,6 +289,7 @@
 
     if (event.key !== 'Escape') return;
     utilityDisclosures.forEach((disclosure) => { disclosure.open = false; });
+    const activeMega = megaTriggers.find(trigger => trigger.getAttribute('aria-expanded') === 'true');
     closeMegas();
     if (menuWasOpen && drawerBody?.dataset.view === 'phones') {
       setDrawerView('main');
@@ -274,6 +300,7 @@
     setContactOpen(false);
     if (menuWasOpen) mobileTrigger?.focus();
     else if (contactWasOpen) contactTrigger?.focus();
+    else if (activeMega) { activeMega.focus(); closeMegas(); }
   });
 
   const updateChrome = () => {
