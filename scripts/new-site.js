@@ -331,11 +331,16 @@
     if (floatingContacts && scrollDockSlot) {
       const slot = scrollDockSlot.getBoundingClientRect();
       const dockHeight = scrollDock.getBoundingClientRect().height;
-      // Opening near the footer must not squeeze the options behind the fixed header.
-      const contactOpen = contactTrigger?.getAttribute('aria-expanded') === 'true';
-      const footerOffset = parked && !contactOpen ? Math.max(baseOffset, window.innerHeight - slot.bottom + (slot.height - dockHeight) / 2) : floatingOffset;
+      // Keep the trigger aligned with the parked dock even while contacts are open.
+      const footerOffset = parked ? Math.max(baseOffset, window.innerHeight - slot.bottom + (slot.height - dockHeight) / 2) : floatingOffset;
       floatingContacts.style.bottom = `${footerOffset}px`;
       floatingContacts.style.setProperty('--contact-bottom', `${footerOffset}px`);
+      if (contactMenu) {
+        const headerBottom = Math.max(0, header?.getBoundingClientRect().bottom || 0);
+        const menuInset = parseFloat(getComputedStyle(contactMenu).bottom) || 68;
+        const availableHeight = window.innerHeight - footerOffset - menuInset - headerBottom - 12;
+        contactMenu.style.maxHeight = `${Math.max(0, availableHeight)}px`;
+      }
     }
     scrollDock.classList.toggle('is-visible', visible);
     scrollDock.setAttribute('aria-hidden', String(!visible));

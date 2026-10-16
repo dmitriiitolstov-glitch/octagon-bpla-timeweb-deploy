@@ -1,0 +1,59 @@
+/* Подключить после текущих стилей. Только VK Видео в блоке социальных сетей. */
+:root:root:root:root:root:root .home-community-socials a[aria-label="VK Видео"] img {
+  transform: translateY(-3.7%) scale(1.25, 1.19);
+}
+:root:root:root:root:root:root .home-community-socials a[aria-label="VK Видео"]:hover img {
+  transform: translateY(-3.7%) scale(1.32, 1.25664);
+}
+
+/* Подключить после текущих стилей. Существующую логику прокрутки не менять. */
+:root { --quick-actions-height:56px; }
+:root:root:root:root:root:root .n-scroll-dock { box-sizing:border-box; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); height:var(--quick-actions-height); min-height:var(--quick-actions-height); width:420px; padding:5px; gap:0; }
+:root:root:root:root:root:root .n-scroll-dock a { display:flex; align-items:center; justify-content:center; min-width:0; min-height:44px; height:100%; padding:0 3px; font-size:14px; letter-spacing:0; white-space:nowrap; }
+:root:root:root:root:root:root .n-contact-dock,
+:root:root:root:root:root:root .n-contact-dock > button.n-oct-contact-trigger { box-sizing:border-box; width:var(--quick-actions-height); height:var(--quick-actions-height); min-height:var(--quick-actions-height); min-width:0; padding:0; gap:0; align-items:center; justify-content:center; }
+:root:root:root:root:root:root .n-contact-trigger-raster { width:calc(var(--quick-actions-height) * 64 / 68); height:var(--quick-actions-height); }
+:root:root:root:root:root:root .n-contact-trigger-raster img { width:calc(var(--quick-actions-height) * 100 / 68); height:calc(var(--quick-actions-height) * 100 / 68); left:calc(var(--quick-actions-height) * -18 / 68); top:calc(var(--quick-actions-height) * -13 / 68); }
+:root:root:root:root:root:root .n-contact-trigger-art { width:var(--quick-actions-height); height:var(--quick-actions-height); }
+:root:root:root:root:root:root .n-contact-dock .n-contact-menu { bottom:calc(var(--quick-actions-height) + 12px); }
+@media(max-width:760px){
+:root:root:root:root:root:root .n-scroll-dock {left:8px; right:72px; width:auto; max-width:none;}
+:root:root:root:root:root:root .n-scroll-dock a {font-size:clamp(10.5px,3.05vw,14px);padding:0;}
+:root:root:root:root:root:root .n-contact-dock {right:8px;}
+}
+
+:root:root:root:root:root:root .n-footer-dock-slot .n-scroll-dock.is-parked {width:420px;max-width:calc(100% - 64px);}
+@media(max-width:760px){:root:root:root:root:root:root .n-footer-dock-slot .n-scroll-dock.is-parked {width:calc(100% - 64px);}}
+@media(max-width:340px){:root:root:root:root:root:root .n-footer-dock-slot .n-scroll-dock.is-parked a {font-size:10px;}}
+
+/* Match the contact options to the approved 56px trigger, including the dot.
+   Scope strictly to the floating contact menu. */
+:root:root:root:root:root:root .n-contact-dock .n-contact-menu {
+  --octagon-icon-size: calc(var(--quick-actions-height, 56px) - 3px);
+  box-sizing: border-box;
+  width: calc(var(--quick-actions-height, 56px) + 16px);
+  right: -8px;
+  grid-template-columns: var(--quick-actions-height, 56px);
+  padding: 8px;
+  justify-content: center;
+}
+:root:root:root:root:root:root .n-contact-dock .n-oct-contact-option {
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: var(--quick-actions-height, 56px);
+  height: var(--quick-actions-height, 56px);
+  min-height: 44px;
+  padding: 0;
+}
+:root:root:root:root:root:root .n-contact-dock .n-oct-contact-option .n-octagon-icon {
+  width: var(--octagon-icon-size);
+  height: var(--octagon-icon-size);
+}
+
+/* Approved lime contact icon with black outline. Scope: trigger artwork only. */
+:root:root:root:root:root:root .n-contact-dock .oct-contact-approved-art {display:block;flex:none;width:var(--quick-actions-height,56px);height:var(--quick-actions-height,56px);overflow:hidden;pointer-events:none;}
+:root:root:root:root:root:root .n-contact-dock .oct-contact-approved-close {display:none;}
+:root:root:root:root:root:root .n-oct-contact-trigger[aria-expanded="true"] .oct-contact-approved-phone {display:none;}
+:root:root:root:root:root:root .n-oct-contact-trigger[aria-expanded="true"] .oct-contact-approved-close {display:block;}
