@@ -1,1 +1,2 @@
-body:has(.pc-page) .n-scroll-dock{display:grid!important}
+/* Override the legacy page-specific flex!important at the same specificity. */
+:root:root:root:root:root:root body:has(.pc-page) .n-scroll-dock{display:grid!important}
